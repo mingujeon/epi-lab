@@ -3,8 +3,27 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>SPI Lab — Supersensory Physical Intelligence Laboratory, PNU</title>
-<meta name="description" content="Autonomous Physical Intelligence Laboratory at Pusan National University. Beyond the Five Senses. Supersensory Intelligence for robots, autonomous vehicles, and industry. PI: Prof. Mingu Jeon." />
+<title>EPI Lab — Extended Physical Intelligence Laboratory, PNU</title>
+<meta name="description" content="Extended Physical Intelligence Laboratory at Pusan National University. Beyond the Five Senses. Extended Physical Intelligence for robots, autonomous vehicles, and industry. PI: Prof. Mingu Jeon." />
+<!-- ===== SEO / sharing ===== -->
+<link rel="canonical" href="https://mingujeon.github.io/epi-lab/" />
+<meta name="theme-color" content="#f4f1ea" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMjAgMTIwJz48cmVjdCB3aWR0aD0nMTIwJyBoZWlnaHQ9JzEyMCcgcng9JzIwJyBmaWxsPScjZjRmMWVhJy8+PGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoMjgsNCknPjxyZWN0IHg9JzAnIHk9JzcnIHdpZHRoPScxNScgaGVpZ2h0PSc5OCcgZmlsbD0nIzFhMTgxNCcvPjxyZWN0IHg9JzAnIHk9JzcnIHdpZHRoPSc1NicgaGVpZ2h0PScxNScgZmlsbD0nIzFhMTgxNCcvPjxyZWN0IHg9JzAnIHk9JzQ4LjUnIHdpZHRoPSc0OCcgaGVpZ2h0PScxNScgZmlsbD0nI2M4NDAyYicvPjxyZWN0IHg9JzAnIHk9JzkwJyB3aWR0aD0nNjQnIGhlaWdodD0nMTUnIGZpbGw9JyMxYTE4MTQnLz48L2c+PC9zdmc+" />
+<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAC2UlEQVR42qWWzY7URhCAq6prbGt/A8pKgbeIuHAIMxESh9w5cANOURCnSLCcOAeegCsvQfIYeYtIngw7/mu7Pe2qHMyuZscej2dSqlOru76uXxXmSQwd8d7DOFFVYwwRbbvA3SNEPL/7PQAB6AgEycpaaxFxN6D9TlVVnz59rJwjomEEERVFMZtNH01nVVn0+sHd7ztX//Hh43KZMrOqDAB4MskL9x7g8ZNfbJGNArSMi4uLIAiZWVXbk34AM8bx8fHxQDC599R73+ZZVUVERaCPwcxl6YYrgncWSRRFQRCoahdhDNe1i6KodXRvADPHcfzu8u3vby7Tq7kx3YSBiIZhUOZLZj7cg5OTc2hcrwlEFBEROTBEACAiqn4g0NtKYCygNdEK7C/9AFzTNlLftJuEwwBeb1QVEZCRGTs5UBFQ3RuAACcGG4ORQcuGV3Vj0ybPNgCqSpMAg2CYgbemqSoy+zz7+/nT1qKKhGHY9sGtZ4b9cvHDy9/uvXy1Wi7Q8CEeoEEgI6vau2rzjmGfpVrXO9PQT3YCjSgKgIoxhibBxrRBwxRGYMwhSUaAO0zCBpkIqSistZaIdI2BZrJaxFLam0IbBVAAAqhFP8dZmaUcBEWez2aznx5N3ca4J5LSnj54KK4EpD08QIBa4fM8WyZZFEVX/8T3f/3x2YvXubcTnmx8RlwpVYlEe4foOyZkiphWgQlcqd75qwVs9IECEsGg9a1JbvSbelVFQmY0PFCL/3cW6bXsHFmHAIgIkVsZvtk0zd4ARKyqKs+TNE3NUIgUEY+OjrpO3BoVqsrMSZJOZz8nScrMsjYqtvUsInrfnJ2d/vXnl7OzU+/9OmaUB6W1AyMBEb33babGhoivZXhtWQdEUTS2ilR1Pp+PWbyuAeS9d64a5YGqhmHw7vLtmNXxpjNFJArDMAy6DOxu14h4dHo+evm9aX+xWdIF9Ico+frvIU3b1yj/AWttmSkXIHsGAAAAAElFTkSuQmCC" />
+<link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAABnklEQVR42u3c0QmDMBRA0aZkFgXpEp2g0E07QZcoom5Q/wIZoAsU+lHhSTxnAIPx8vJlUi3rCb452wLEgTgQB+JAHIgDcSAOxIE4QByIA3EgDiLk2OW7fjjy7i/zaHLgWEEciANxgDgQB+JAHIgDcSAOxIE4EAeIA3EgDsSBOBAH4kAcNCo38A47//vD5EAciAPEgTgQB+JAHIgDcSAOxIE4EAeIA3EgDsSBOBAH4kAciANxgDgQB+JAHIgDcSAOxIE4EAeIA3EgDjaWalkDl3/drq3u7OXxNDlwrCAOEAfiQByIA3EgDsSBOBAH4gBxIA7EgTgQB+JAHIgDcSAODizHLn+f3v8/ZJlHH9LkQByIA3EgDsSBOEAciANxIA7EgTgQB+JAHIgDcYA4EAfiQByIA3EgDsSBOBAHiANxIA7EgTgQB+JAHIgDcUD4VZOb6Pqh4S8UeJGmyYE4EAfiQByIA3EgDsSBOBAHiANxIA7EgTgQB+JAHIgDcYA4+C3VstoFTA7EgTgQB+JAHIgDcSAOxAHiQByIA3EgDvbjA/ztGgAOA8X4AAAAAElFTkSuQmCC" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="EPI Lab" />
+<meta property="og:title" content="EPI Lab — Extended Physical Intelligence Laboratory" />
+<meta property="og:description" content="Extended Physical Intelligence Laboratory at Pusan National University — perception and decision-making grounded in the laws of physics, across robotics and industrial AI. PI: Prof. Mingu Jeon." />
+<meta property="og:url" content="https://mingujeon.github.io/epi-lab/" />
+<meta property="og:image" content="https://mingujeon.github.io/epi-lab/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="EPI Lab — Extended Physical Intelligence Laboratory" />
+<meta name="twitter:description" content="Extended Physical Intelligence Laboratory at Pusan National University — perception and decision-making grounded in the laws of physics, across robotics and industrial AI. PI: Prof. Mingu Jeon." />
+<meta name="twitter:image" content="https://mingujeon.github.io/epi-lab/og-image.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,700;1,9..144,400&family=JetBrains+Mono:wght@400;500&family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -14,7 +33,7 @@
     --bg-dark: #1a1814;
     --ink: #1a1814;
     --ink-soft: #524a3d;
-    --ink-muted: #8a7f6c;
+    --ink-muted: #756a57;
     --accent: #c8402b;
     --accent-deep: #8e2a1c;
     --paper: #ebe6dc;
@@ -26,12 +45,12 @@
   html { scroll-behavior: smooth; }
 
   /* Section anchor offset — matches fixed nav height */
-  section[id] { scroll-margin-top: 72px; }
+  section[id] { scroll-margin-top: 140px; }
 
   body {
     background: var(--bg);
     color: var(--ink);
-    font-family: "Inter Tight", -apple-system, sans-serif;
+    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-weight: 400;
     line-height: 1.55;
     -webkit-font-smoothing: antialiased;
@@ -63,7 +82,7 @@
     border-bottom: 1px solid var(--rule);
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
   }
 
   .brand {
@@ -74,8 +93,12 @@
     display: flex;
     align-items: center;
     gap: 0.6rem;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
   }
 
+  .brand-logo-full { height: 96px; width: auto; max-width: 70vw; flex-shrink: 0; display: block; }
   .brand-logo {
     width: 44px;
     height: 44px;
@@ -104,6 +127,17 @@
 
   .nav-links a:hover { color: var(--accent); }
 
+  .nav-toggle {
+    display: none;
+    flex-direction: column; justify-content: center; align-items: center; gap: 5px;
+    width: 40px; height: 40px; padding: 0; margin: -0.3rem 0;
+    background: none; border: none; cursor: pointer;
+  }
+  .nav-toggle span {
+    display: block; width: 24px; height: 2px; background: var(--ink);
+    border-radius: 2px; transition: transform 0.25s ease, opacity 0.2s ease;
+  }
+
   .nav-links a::after {
     content: "";
     position: absolute;
@@ -122,7 +156,7 @@
     min-height: 100vh;
     /* Fluid padding: scales with viewport width.
        Min 1.5rem (mobile), preferred 5vw (scales), max 8rem (huge screens) */
-    padding: clamp(7rem, 12vh, 12rem) clamp(1.5rem, 5vw, 8rem) clamp(2rem, 5vh, 5rem);
+    padding: clamp(9.5rem, 12vh, 12rem) clamp(1.5rem, 5vw, 8rem) clamp(2rem, 5vh, 5rem);
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1.6fr;
@@ -210,7 +244,7 @@
   .hero-right {
     position: relative;
     aspect-ratio: 1200 / 540;
-    min-height: 350px;
+    min-height: 340px;
     width: 100%;
   }
 
@@ -1639,6 +1673,9 @@
 
   .filter-btn:hover { border-color: var(--accent); color: var(--accent); }
   .filter-btn.active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .filter-break { display: none; flex-basis: 100%; height: 0; margin: 0; padding: 0; border: 0; }
+  .pub-filter-select { display: none; }
+  .t-short { display: none; }
 
   .pub-item.hidden { display: none; }
   .proj-group.hidden { display: none; }
@@ -2300,7 +2337,7 @@
     cursor: pointer; will-change: transform;
     transition: background .3s, border-color .3s, box-shadow .3s;
   }
-  .cn-node.center { width: 70px; height: 70px; background: var(--accent); border-color: var(--accent); cursor: default; }
+  .cn-node.center { width: 70px; height: 70px; background: var(--accent); border-color: var(--accent); cursor: default; box-shadow: 0 0 0 4px var(--bg), 0 0 0 5.5px var(--ink-soft); }
   .cn-label {
     position: absolute; left: 50%; top: calc(100% + 11px);
     transform: translateX(-50%);
@@ -2343,6 +2380,7 @@
   .cn-node.expanded { background: transparent; border-color: transparent; box-shadow: none; z-index: 50; }
   .cn-node.expanded .cn-label { opacity: 0; }
   .cn-node.expanded .cn-detail { transform: translate(-50%,-50%) scale(1); opacity: 1; pointer-events: auto; }
+  .collab-network.has-expanded .cn-node:not(.expanded) { pointer-events: none; }
   .cn-close {
     position: absolute; top: .5rem; right: .7rem; background: none; border: none;
     line-height: 1; font-size: 1.5rem; color: var(--ink-muted); cursor: pointer; padding: .1rem .3rem; transition: color .2s;
@@ -2356,21 +2394,21 @@
   .cn-role { display: block; font-family: "JetBrains Mono", monospace; font-size: .58rem; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-top: .25rem; }
 
   .collab-hint {
-    position: absolute; left: 50%; bottom: 6px; transform: translateX(-50%);
-    display: inline-flex; align-items: center; gap: .55rem;
+    display: flex; align-items: center; gap: .55rem;
+    width: fit-content; margin: 0.5rem auto 0;
     font-family: "JetBrains Mono", monospace; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase;
     color: var(--accent);
     background: var(--paper); border: 1px solid var(--rule); border-radius: 999px;
     padding: .55rem 1.1rem;
     box-shadow: 0 8px 22px -12px rgba(26,24,20,0.5);
-    pointer-events: none; z-index: 6; transition: opacity .3s; white-space: nowrap;
+    pointer-events: none; transition: opacity .3s; white-space: nowrap;
   }
   .collab-hint::before {
-    content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--accent);
+    content: ""; flex-shrink: 0; width: 8px; height: 8px; border-radius: 50%; background: var(--accent);
     animation: hintpulse 1.8s ease-in-out infinite;
   }
   @keyframes hintpulse { 0%,100% { opacity: .3; transform: scale(.75); } 50% { opacity: 1; transform: scale(1.2); } }
-  .collab-network.has-expanded .collab-hint { opacity: 0; }
+  .collab-network.has-expanded + .collab-hint { opacity: 0; }
 
   /* Join Us banner in People section */
   .join-banner {
@@ -2536,10 +2574,10 @@
 
   .news-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.6rem;
     margin: 0 auto;
-    max-width: 940px;
+    max-width: 1240px;
   }
 
   .news-card {
@@ -2625,6 +2663,7 @@
     cursor: pointer;
     padding: 2rem;
     min-height: 190px;
+    min-width: 0;
   }
   .news-card-head {
     display: flex; justify-content: space-between; align-items: center;
@@ -2724,13 +2763,23 @@
   .nm-recognition {
     display: inline-block; font-family: "JetBrains Mono", monospace; font-size: 0.6rem;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent);
-    border: 1px solid var(--accent); padding: 0.2rem 0.5rem; margin-bottom: 0.7rem;
+    border: 1px solid var(--accent); padding: 0.2rem 0.5rem;
   }
-  .nm-links { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.7rem; }
+  .nm-links { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+  .nm-meta-row {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 1rem 1.2rem; flex-wrap: wrap; margin-top: 1rem;
+  }
   .nm-links .pub-btn.disabled { opacity: 0.5; pointer-events: none; cursor: default; }
   @media (max-width: 640px) {
-    .news-modal-dialog { padding: 1.7rem; }
-    .news-modal-head { flex-direction: column; align-items: flex-start; gap: 0.9rem; }
+    .news-modal { padding: 1rem; }
+    .news-modal-dialog { padding: 1.4rem 1.3rem; max-height: 92vh; }
+    .news-modal-head { flex-direction: column; align-items: flex-start; gap: 0.7rem; padding-bottom: 1rem; margin-bottom: 1.1rem; }
+    .news-modal-mark { width: 150px; height: 48px; }
+    .news-modal-venue { font-size: 0.95rem; }
+    .nm-title { font-size: 1.02rem; margin-bottom: 0.45rem; }
+    .nm-authors { font-size: 0.85rem; line-height: 1.5; margin-bottom: 0.5rem; }
+    .nm-meta-row { margin-top: 0.8rem; }
   }
 
   /* ============ TEACHING ============ */
@@ -2827,6 +2876,7 @@
     text-transform: uppercase;
   }
 
+  .footer-logo { width: 240px; max-width: 80%; height: auto; display: block; margin: 0 auto 1rem; }
   .footer-brand {
     font-family: "Fraunces", serif;
     font-size: 1.7rem;
@@ -2893,7 +2943,7 @@
 
   /* News & Teaching: 2 cols on tablet/half-screen (placed after base rules to win specificity) */
   @media (max-width: 1200px) {
-    .news-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+    .news-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
     .teaching-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
     .team-members { grid-template-columns: repeat(3, 1fr); }
     .collab-network { height: 480px; }
@@ -2901,19 +2951,39 @@
 
   @media (max-width: 900px) {
     /* ===== Navigation ===== */
-    nav { 
-      padding: 0.9rem 1.2rem; 
-      flex-wrap: wrap;
-      gap: 0.6rem;
+    nav {
+      padding: 0.9rem 1.2rem;
+      align-items: center;
     }
-    .brand { font-size: 1.45rem; }
-    .brand-logo { width: 36px; height: 36px; }
-    .nav-links { 
-      gap: 0.8rem; 
-      font-size: 0.62rem;
-      letter-spacing: 0.06em;
-      flex-wrap: wrap;
+    section[id] { scroll-margin-top: 92px; }
+    .pub-item { scroll-margin-top: 106px; }
+    .brand-logo-full { height: 60px; }
+    .brand { font-size: 1.65rem; }
+    .brand-logo { width: 44px; height: 44px; }
+    /* mobile dropdown nav */
+    .nav-toggle { display: flex; }
+    .nav-links {
+      position: absolute; top: 100%; left: 0; right: 0;
+      flex-direction: column; gap: 0;
+      background: var(--paper);
+      border-top: 1px solid var(--rule);
+      font-size: 0.9rem; letter-spacing: 0.08em;
+      min-height: calc(100vh - 2.5rem);
+      min-height: calc(100dvh - 2.5rem);
+      overflow: hidden;
+      opacity: 0; pointer-events: none; transform: translateY(-8px);
+      transition: opacity 0.22s ease, transform 0.26s ease;
     }
+    nav.nav-open .nav-links {
+      opacity: 1; pointer-events: auto; transform: translateY(0);
+      box-shadow: 0 22px 34px -16px rgba(26, 24, 20, 0.55);
+    }
+    .nav-links a { display: block; width: 100%; padding: 0.95rem 1.5rem; }
+    .nav-links a:not(:last-child) { border-bottom: 1px solid var(--rule); }
+    .nav-links a:active { background: var(--bg); }
+    nav.nav-open .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    nav.nav-open .nav-toggle span:nth-child(2) { opacity: 0; }
+    nav.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
     
     /* ===== Hero ===== */
     .hero { 
@@ -2928,7 +2998,7 @@
       min-width: 0;
       overflow: hidden;
     }
-    .hero-right { aspect-ratio: 1200 / 540; min-height: 230px; }
+    .hero-right { aspect-ratio: 1200 / 540; min-height: 0; }
     .eyebrow { font-size: 0.65rem; margin-bottom: 1.2rem; }
     h1.hero-title { 
       font-size: clamp(2.5rem, 11vw, 4rem); 
@@ -3023,12 +3093,16 @@
     /* ===== Publications filter ===== */
     .pub-filter-wrap {
       margin-bottom: 2rem;
+      flex-direction: row;
+      gap: 0.8rem;
     }
     .pub-filter-row {
+      flex: 1;
+      min-width: 0;
       flex-direction: column;
       align-items: flex-start !important;
       gap: 0.5rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0;
     }
     .pub-filter-label {
       font-size: 0.7rem;
@@ -3037,11 +3111,20 @@
       width: 100%;
       gap: 0.4rem;
     }
-    .filter-btn {
-      font-size: 0.62rem;
-      padding: 0.35rem 0.6rem;
-      letter-spacing: 0.04em;
+    /* mobile: replace pill buttons with a compact dropdown (tap to choose) */
+    .pub-filter-row .pub-filter-buttons { display: none; }
+    .pub-filter-select {
+      display: block; width: 100%;
+      font-family: "JetBrains Mono", monospace; font-size: 0.8rem; letter-spacing: 0.04em;
+      color: var(--ink); background-color: var(--bg);
+      border: 1px solid var(--rule); border-radius: 0;
+      padding: 0.7rem 2.4rem 0.7rem 0.9rem;
+      -webkit-appearance: none; -moz-appearance: none; appearance: none;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' fill='none' stroke='%23c8402b' stroke-width='1.6'/></svg>");
+      background-repeat: no-repeat; background-position: right 0.95rem center; background-size: 12px 8px;
+      cursor: pointer;
     }
+    .pub-filter-select:focus { outline: none; border-color: var(--accent); }
     
     /* ===== Projects ===== */
     .proj-card[data-type="ongoing"]::before { 
@@ -3061,7 +3144,7 @@
     .recruit-body { font-size: 0.9rem; }
     
     /* ===== News ===== */
-    .news-grid { grid-template-columns: 1fr; gap: 1rem; }
+    .news-grid { gap: 1.3rem; }
     .news-card { padding: 1.4rem; min-height: auto; }
     
     /* ===== Teaching ===== */
@@ -3082,15 +3165,26 @@
   
   /* Members: 2 columns on narrow tablets / notebook split-screen */
   @media (max-width: 640px) {
+    .news-grid { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
     .team-members { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
     .collab-network { height: 440px; }
+    /* PI: stack vertically (photo on top, larger) so the photo isn't cramped beside the text */
+    .team-pi { flex-direction: column; align-items: center; gap: 1.5rem; }
+    .pi-photo { width: clamp(220px, 62vw, 300px); }
+    .pi-text { width: 100%; max-width: 100%; }
+    /* Project thread titles: keep THREAD id on the left; split the name at "&" within the space to its right */
+    .proj-thread { align-items: flex-start; gap: 0.7rem; }
+    .proj-thread-id { flex-shrink: 0; white-space: nowrap; }
+    .proj-thread-name { flex: 1; min-width: 0; display: flex; flex-direction: column; line-height: 1.2; font-size: 1.3rem; }
+    .proj-thread-name .ptn-a { align-self: flex-end; }
+    .proj-thread-name .ptn-b { align-self: flex-end; }
   }
   
   /* ===== Small phones (under 480px) — even tighter ===== */
   @media (max-width: 480px) {
     nav { padding: 0.8rem 1rem; }
-    .nav-links { font-size: 0.58rem; gap: 0.6rem; }
-    .brand { font-size: 1.3rem; }
+    .nav-links a { padding: 0.8rem 1.2rem; }
+    .brand { font-size: 1.5rem; }
     
     section { padding: 3.5rem 1rem; }
     
@@ -3117,10 +3211,11 @@
     .team-members { grid-template-columns: 1fr; }
     .collab-network { height: 400px; }
     .cn-detail { width: 320px; }
+    .collab-hint { font-size: .6rem; letter-spacing: .05em; padding: .5rem .85rem; max-width: 90%; white-space: normal; text-align: center; line-height: 1.35; }
   }
 
   /* Project PAPER -> Publications highlight */
-  .pub-item { scroll-margin-top: 90px; }
+  .pub-item { scroll-margin-top: 158px; }
   @keyframes pubFlash {
     0%   { background: rgba(200, 64, 43, 0.20); }
     78%  { background: rgba(200, 64, 43, 0.20); }
@@ -3201,26 +3296,34 @@
     border-color: var(--accent); text-decoration: none;
   }
   .dataset-access:hover { background: var(--accent-deep); border-color: var(--accent-deep); color: var(--bg); }
+
+
+  /* Respect users who prefer reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+    html { scroll-behavior: auto !important; }
+  }
+</style>
+<style id="origHeroCSS">
+/* original Physical Intelligence hero diagram — restored */
+
 </style>
 </head>
 <body>
 
 <nav>
-  <div class="brand">
-    <svg class="brand-logo" viewBox="0 0 100 100">
-      <!-- Outer ripple (bold for nav visibility) -->
-      <circle class="ripple-outer" cx="50" cy="50" r="42" opacity="0.55" />
-      <circle class="ripple-outer" cx="50" cy="50" r="32" opacity="0.75" />
-      <!-- Lens -->
-      <path class="lens" d="M 10 50 Q 50 18, 90 50 Q 50 82, 10 50 Z" />
-      <!-- Inner ripple inside lens -->
-      <circle class="ripple-inner" cx="50" cy="50" r="15" opacity="0.85" />
-      <!-- Pupil -->
-      <circle class="pupil" cx="50" cy="50" r="7" />
-    </svg>
-    <span>SPI Lab</span>
-  </div>
-  <div class="nav-links">
+  <a class="brand" href="#" id="brandHome" aria-label="Back to top">
+    <svg class="brand-logo-full" viewBox="0 0 252 116" aria-label="Extended Physical Intelligence Laboratory"><rect x="0" y="7" width="15" height="98" fill="#1a1814"></rect>
+  <rect x="0" y="7" width="56" height="15" fill="#1a1814"></rect>
+  <rect x="0" y="48.5" width="48" height="15" fill="#c8402b"></rect>
+  <rect x="0" y="90" width="64" height="15" fill="#1a1814"></rect>
+  <path d="M79.05 25.6L79.05 7.05L91.98 7.05L91.98 10.7L83.52 10.7L83.52 14.44L91.31 14.44L91.31 18L83.52 18L83.52 21.95L91.97 21.95L91.97 25.6ZM97.83 11.68L100.11 16.29L102.49 11.68L106.96 11.68L103.08 18.65L107.11 25.6L102.67 25.6L100.11 20.99L97.64 25.6L93.14 25.6L97.19 18.65L93.34 11.68ZM116.11 11.68L116.11 14.95L107.35 14.95L107.35 11.68ZM109.18 8.37L113.6 8.37L113.6 21.22Q113.6 21.78 113.87 22.06Q114.15 22.34 114.73 22.34Q114.96 22.34 115.25 22.29Q115.54 22.24 115.7 22.19L116.36 25.4Q115.61 25.61 114.97 25.71Q114.33 25.8 113.71 25.8Q111.49 25.8 110.34 24.75Q109.18 23.69 109.18 21.72ZM124.04 25.86Q121.85 25.86 120.27 25Q118.69 24.13 117.85 22.52Q117.01 20.92 117.01 18.69Q117.01 16.54 117.86 14.92Q118.7 13.31 120.25 12.41Q121.79 11.51 123.88 11.51Q125.36 11.51 126.6 11.97Q127.84 12.44 128.74 13.34Q129.65 14.24 130.14 15.56Q130.63 16.88 130.63 18.61L130.63 19.71L118.54 19.71L118.54 17.16L128.53 17.16L126.46 17.76Q126.46 16.8 126.17 16.12Q125.89 15.44 125.33 15.07Q124.77 14.69 123.93 14.69Q123.1 14.69 122.53 15.07Q121.95 15.44 121.65 16.11Q121.35 16.77 121.35 17.68L121.35 19.51Q121.35 20.48 121.7 21.19Q122.04 21.9 122.67 22.28Q123.3 22.66 124.12 22.66Q124.69 22.66 125.17 22.5Q125.64 22.34 125.97 22.02Q126.31 21.7 126.48 21.25L130.54 21.37Q130.29 22.74 129.45 23.74Q128.6 24.75 127.23 25.31Q125.86 25.86 124.04 25.86ZM136.58 17.67L136.58 25.6L132.15 25.6L132.15 11.68L136.53 11.68L136.53 14.24L136.65 14.24Q137.12 12.97 138.16 12.24Q139.2 11.51 140.74 11.51Q142.21 11.51 143.29 12.16Q144.38 12.81 144.97 13.99Q145.57 15.17 145.57 16.73L145.57 25.6L141.14 25.6L141.14 17.61Q141.14 16.45 140.55 15.79Q139.97 15.14 138.91 15.14Q138.21 15.14 137.69 15.44Q137.17 15.74 136.88 16.31Q136.58 16.87 136.58 17.67ZM152.69 25.8Q151.16 25.8 149.9 25Q148.64 24.21 147.89 22.61Q147.14 21.02 147.14 18.65Q147.14 16.2 147.92 14.62Q148.7 13.04 149.96 12.27Q151.21 11.51 152.67 11.51Q153.77 11.51 154.54 11.88Q155.32 12.25 155.83 12.84Q156.34 13.44 156.6 14.07L156.69 14.07L156.69 7.05L161.12 7.05L161.12 25.6L156.75 25.6L156.75 23.33L156.6 23.33Q156.32 23.98 155.81 24.54Q155.3 25.1 154.52 25.45Q153.75 25.8 152.69 25.8ZM154.23 22.35Q155.04 22.35 155.61 21.89Q156.18 21.43 156.49 20.6Q156.8 19.77 156.8 18.65Q156.8 17.51 156.5 16.68Q156.19 15.85 155.61 15.4Q155.04 14.95 154.23 14.95Q153.42 14.95 152.84 15.41Q152.27 15.88 151.98 16.7Q151.69 17.53 151.69 18.65Q151.69 19.76 151.98 20.59Q152.28 21.43 152.85 21.89Q153.42 22.35 154.23 22.35ZM169.73 25.86Q167.54 25.86 165.96 25Q164.37 24.13 163.53 22.52Q162.69 20.92 162.69 18.69Q162.69 16.54 163.54 14.92Q164.39 13.31 165.93 12.41Q167.47 11.51 169.57 11.51Q171.05 11.51 172.29 11.97Q173.53 12.44 174.43 13.34Q175.33 14.24 175.82 15.56Q176.31 16.88 176.31 18.61L176.31 19.71L164.22 19.71L164.22 17.16L174.21 17.16L172.14 17.76Q172.14 16.8 171.86 16.12Q171.57 15.44 171.01 15.07Q170.45 14.69 169.62 14.69Q168.78 14.69 168.21 15.07Q167.64 15.44 167.34 16.11Q167.04 16.77 167.04 17.68L167.04 19.51Q167.04 20.48 167.38 21.19Q167.72 21.9 168.35 22.28Q168.98 22.66 169.8 22.66Q170.38 22.66 170.85 22.5Q171.32 22.34 171.66 22.02Q171.99 21.7 172.17 21.25L176.23 21.37Q175.98 22.74 175.13 23.74Q174.28 24.75 172.92 25.31Q171.55 25.86 169.73 25.86ZM182.86 25.8Q181.33 25.8 180.07 25Q178.8 24.21 178.06 22.61Q177.31 21.02 177.31 18.65Q177.31 16.2 178.09 14.62Q178.87 13.04 180.12 12.27Q181.38 11.51 182.84 11.51Q183.93 11.51 184.71 11.88Q185.49 12.25 186 12.84Q186.51 13.44 186.77 14.07L186.86 14.07L186.86 7.05L191.29 7.05L191.29 25.6L186.92 25.6L186.92 23.33L186.77 23.33Q186.49 23.98 185.98 24.54Q185.47 25.1 184.69 25.45Q183.92 25.8 182.86 25.8ZM184.4 22.35Q185.2 22.35 185.78 21.89Q186.35 21.43 186.66 20.6Q186.97 19.77 186.97 18.65Q186.97 17.51 186.67 16.68Q186.36 15.85 185.78 15.4Q185.2 14.95 184.4 14.95Q183.59 14.95 183.01 15.41Q182.44 15.88 182.15 16.7Q181.86 17.53 181.86 18.65Q181.86 19.76 182.15 20.59Q182.45 21.43 183.02 21.89Q183.59 22.35 184.4 22.35ZM79.05 52.1L79.05 33.55L86.69 33.55Q88.78 33.55 90.3 34.36Q91.82 35.17 92.65 36.62Q93.48 38.07 93.48 39.99Q93.48 41.9 92.64 43.33Q91.8 44.77 90.24 45.56Q88.68 46.35 86.57 46.35L81.83 46.35L81.83 42.81L85.73 42.81Q86.74 42.81 87.43 42.46Q88.12 42.1 88.48 41.47Q88.83 40.83 88.83 39.99Q88.83 39.11 88.48 38.48Q88.12 37.86 87.43 37.51Q86.74 37.17 85.72 37.17L83.52 37.17L83.52 52.1ZM99.39 44.17L99.39 52.1L94.96 52.1L94.96 33.55L99.23 33.55L99.23 40.74L99.39 40.74Q99.86 39.46 100.94 38.73Q102.01 38.01 103.57 38.01Q105.03 38.01 106.12 38.66Q107.21 39.31 107.81 40.48Q108.41 41.65 108.41 43.23L108.41 52.1L103.97 52.1L103.97 44.11Q103.97 42.95 103.39 42.29Q102.8 41.64 101.73 41.64Q101.03 41.64 100.51 41.94Q99.98 42.24 99.68 42.81Q99.39 43.37 99.39 44.17ZM112.73 57.3Q111.93 57.32 111.21 57.19Q110.5 57.07 110 56.88L110.98 53.66L111.08 53.68Q112.02 53.97 112.7 53.88Q113.37 53.79 113.67 53.03L113.83 52.61L108.9 38.18L113.52 38.18L116.09 48.12L116.24 48.12L118.84 38.18L123.51 38.18L118.25 53.44Q117.88 54.58 117.19 55.45Q116.5 56.32 115.41 56.81Q114.32 57.3 112.73 57.3ZM136.61 42.44L132.56 42.54Q132.47 41.89 131.89 41.47Q131.32 41.04 130.44 41.04Q129.67 41.04 129.14 41.35Q128.61 41.65 128.61 42.18Q128.61 42.59 128.94 42.9Q129.27 43.21 130.16 43.38L132.83 43.88Q134.91 44.27 135.94 45.19Q136.96 46.11 136.96 47.64Q136.96 49.07 136.12 50.13Q135.29 51.19 133.84 51.78Q132.39 52.36 130.52 52.36Q127.54 52.36 125.82 51.14Q124.11 49.91 123.86 47.84L128.23 47.74Q128.38 48.5 128.99 48.89Q129.6 49.29 130.53 49.29Q131.39 49.29 131.93 48.97Q132.46 48.65 132.46 48.14Q132.46 47.26 130.77 46.93L128.34 46.46Q126.26 46.06 125.23 45.05Q124.21 44.04 124.21 42.44Q124.21 41.03 124.96 40.05Q125.71 39.06 127.09 38.53Q128.48 38.01 130.37 38.01Q133.2 38.01 134.82 39.19Q136.45 40.37 136.61 42.44ZM138.43 52.1L138.43 38.18L142.86 38.18L142.86 52.1ZM140.63 36.59Q139.7 36.59 139.02 35.96Q138.35 35.34 138.35 34.46Q138.35 33.57 139.02 32.96Q139.7 32.34 140.63 32.34Q141.58 32.34 142.24 32.96Q142.91 33.57 142.91 34.46Q142.91 35.34 142.24 35.96Q141.58 36.59 140.63 36.59ZM151.44 52.36Q149.23 52.36 147.66 51.45Q146.1 50.54 145.26 48.93Q144.43 47.32 144.43 45.19Q144.43 43.05 145.26 41.44Q146.1 39.82 147.67 38.91Q149.25 38.01 151.44 38.01Q153.37 38.01 154.8 38.71Q156.23 39.41 157.04 40.68Q157.85 41.94 157.9 43.66L153.77 43.66Q153.68 42.95 153.39 42.44Q153.09 41.93 152.61 41.65Q152.13 41.38 151.5 41.38Q150.73 41.38 150.15 41.81Q149.57 42.24 149.25 43.08Q148.93 43.92 148.93 45.15Q148.93 46.38 149.25 47.24Q149.57 48.09 150.14 48.54Q150.71 48.99 151.5 48.99Q152.41 48.99 153.02 48.37Q153.63 47.75 153.77 46.65L157.9 46.65Q157.84 48.36 157.04 49.65Q156.24 50.94 154.82 51.65Q153.4 52.36 151.44 52.36ZM163.37 52.35Q162.03 52.35 160.99 51.89Q159.95 51.44 159.37 50.53Q158.78 49.62 158.78 48.24Q158.78 47.08 159.19 46.29Q159.59 45.49 160.31 44.99Q161.02 44.49 161.96 44.22Q162.89 43.96 163.95 43.88Q165.13 43.77 165.86 43.66Q166.58 43.55 166.91 43.31Q167.24 43.07 167.24 42.65L167.24 42.59Q167.24 41.9 166.76 41.52Q166.29 41.13 165.47 41.13Q164.59 41.13 164.06 41.52Q163.53 41.9 163.38 42.56L159.31 42.43Q159.48 41.16 160.23 40.15Q160.99 39.15 162.31 38.58Q163.64 38.01 165.52 38.01Q166.84 38.01 167.96 38.32Q169.08 38.63 169.91 39.23Q170.75 39.82 171.21 40.68Q171.67 41.54 171.67 42.64L171.67 52.1L167.5 52.1L167.5 50.15L167.4 50.15Q167.01 50.87 166.44 51.35Q165.87 51.84 165.1 52.09Q164.34 52.35 163.37 52.35ZM164.72 49.44Q165.43 49.44 166.01 49.14Q166.59 48.85 166.93 48.34Q167.27 47.83 167.27 47.14L167.27 45.84Q167.09 45.94 166.82 46.02Q166.55 46.1 166.23 46.17Q165.91 46.25 165.58 46.3Q165.25 46.35 164.95 46.4Q164.31 46.48 163.87 46.7Q163.43 46.92 163.2 47.24Q162.98 47.57 162.98 48.03Q162.98 48.71 163.46 49.07Q163.95 49.44 164.72 49.44ZM178.19 33.55L178.19 52.1L173.76 52.1L173.76 33.55ZM83.52 60.05L83.52 78.6L79.05 78.6L79.05 60.05ZM90.04 70.67L90.04 78.6L85.61 78.6L85.61 64.68L89.99 64.68L89.99 67.24L90.1 67.24Q90.58 65.97 91.62 65.24Q92.66 64.51 94.2 64.51Q95.67 64.51 96.75 65.16Q97.83 65.81 98.43 66.99Q99.03 68.17 99.03 69.73L99.03 78.6L94.6 78.6L94.6 70.61Q94.6 69.45 94.01 68.79Q93.43 68.14 92.37 68.14Q91.67 68.14 91.15 68.44Q90.63 68.74 90.33 69.31Q90.04 69.87 90.04 70.67ZM108.97 64.68L108.97 67.95L100.2 67.95L100.2 64.68ZM102.03 61.37L106.45 61.37L106.45 74.22Q106.45 74.78 106.72 75.06Q107 75.34 107.58 75.34Q107.81 75.34 108.1 75.29Q108.39 75.24 108.56 75.19L109.22 78.4Q108.47 78.61 107.83 78.71Q107.19 78.8 106.56 78.8Q104.35 78.8 103.19 77.75Q102.03 76.69 102.03 74.72ZM116.9 78.86Q114.71 78.86 113.12 78Q111.54 77.13 110.7 75.52Q109.86 73.92 109.86 71.69Q109.86 69.54 110.71 67.92Q111.56 66.31 113.1 65.41Q114.64 64.51 116.74 64.51Q118.22 64.51 119.46 64.97Q120.7 65.44 121.6 66.34Q122.5 67.24 122.99 68.56Q123.48 69.88 123.48 71.61L123.48 72.71L111.39 72.71L111.39 70.16L121.38 70.16L119.31 70.76Q119.31 69.8 119.03 69.12Q118.74 68.44 118.18 68.07Q117.62 67.69 116.79 67.69Q115.95 67.69 115.38 68.07Q114.81 68.44 114.51 69.11Q114.21 69.77 114.21 70.68L114.21 72.51Q114.21 73.48 114.55 74.19Q114.89 74.9 115.52 75.28Q116.15 75.66 116.97 75.66Q117.54 75.66 118.02 75.5Q118.49 75.34 118.83 75.02Q119.16 74.7 119.34 74.25L123.4 74.37Q123.15 75.74 122.3 76.74Q121.45 77.75 120.08 78.31Q118.72 78.86 116.9 78.86ZM129.44 60.05L129.44 78.6L125 78.6L125 60.05ZM135.96 60.05L135.96 78.6L131.53 78.6L131.53 60.05ZM138.05 78.6L138.05 64.68L142.48 64.68L142.48 78.6ZM140.26 63.09Q139.32 63.09 138.65 62.46Q137.98 61.84 137.98 60.96Q137.98 60.07 138.65 59.46Q139.32 58.84 140.26 58.84Q141.2 58.84 141.87 59.46Q142.53 60.07 142.53 60.96Q142.53 61.84 141.87 62.46Q141.2 63.09 140.26 63.09ZM151.03 84.1Q148.05 84.1 146.37 82.9Q144.69 81.69 144.45 79.86L148.64 79.62Q148.75 80.06 149.07 80.37Q149.38 80.69 149.91 80.87Q150.43 81.04 151.14 81.04Q152.26 81.04 152.99 80.5Q153.72 79.96 153.72 78.62L153.72 76.17L153.55 76.17Q153.29 76.81 152.76 77.32Q152.22 77.83 151.43 78.12Q150.64 78.41 149.61 78.41Q148.09 78.41 146.82 77.7Q145.56 76.99 144.81 75.49Q144.05 73.99 144.05 71.64Q144.05 69.19 144.83 67.61Q145.61 66.04 146.88 65.27Q148.15 64.51 149.61 64.51Q150.7 64.51 151.49 64.88Q152.27 65.25 152.79 65.84Q153.32 66.44 153.58 67.07L153.7 67.07L153.7 64.68L158.07 64.68L158.07 78.66Q158.07 80.42 157.18 81.64Q156.29 82.86 154.71 83.48Q153.12 84.1 151.03 84.1ZM151.15 75.19Q152.36 75.19 153.04 74.24Q153.72 73.3 153.72 71.63Q153.72 70.49 153.41 69.67Q153.11 68.85 152.53 68.4Q151.96 67.95 151.15 67.95Q150.33 67.95 149.76 68.41Q149.18 68.88 148.89 69.7Q148.6 70.52 148.6 71.63Q148.6 72.74 148.9 73.53Q149.2 74.33 149.76 74.76Q150.33 75.19 151.15 75.19ZM166.69 78.86Q164.5 78.86 162.92 78Q161.34 77.13 160.5 75.52Q159.65 73.92 159.65 71.69Q159.65 69.54 160.5 67.92Q161.35 66.31 162.89 65.41Q164.44 64.51 166.53 64.51Q168.01 64.51 169.25 64.97Q170.49 65.44 171.39 66.34Q172.29 67.24 172.78 68.56Q173.28 69.88 173.28 71.61L173.28 72.71L161.19 72.71L161.19 70.16L171.17 70.16L169.11 70.76Q169.11 69.8 168.82 69.12Q168.53 68.44 167.97 68.07Q167.41 67.69 166.58 67.69Q165.74 67.69 165.17 68.07Q164.6 68.44 164.3 69.11Q164 69.77 164 70.68L164 72.51Q164 73.48 164.34 74.19Q164.69 74.9 165.31 75.28Q165.94 75.66 166.76 75.66Q167.34 75.66 167.81 75.5Q168.28 75.34 168.62 75.02Q168.96 74.7 169.13 74.25L173.19 74.37Q172.94 75.74 172.09 76.74Q171.25 77.75 169.88 78.31Q168.51 78.86 166.69 78.86ZM179.23 70.67L179.23 78.6L174.8 78.6L174.8 64.68L179.18 64.68L179.18 67.24L179.29 67.24Q179.76 65.97 180.8 65.24Q181.84 64.51 183.39 64.51Q184.86 64.51 185.94 65.16Q187.02 65.81 187.62 66.99Q188.22 68.17 188.22 69.73L188.22 78.6L183.79 78.6L183.79 70.61Q183.79 69.45 183.2 68.79Q182.61 68.14 181.56 68.14Q180.86 68.14 180.34 68.44Q179.81 68.74 179.52 69.31Q179.23 69.87 179.23 70.67ZM196.8 78.86Q194.59 78.86 193.02 77.95Q191.46 77.04 190.62 75.43Q189.79 73.82 189.79 71.69Q189.79 69.55 190.62 67.94Q191.46 66.32 193.03 65.41Q194.61 64.51 196.8 64.51Q198.73 64.51 200.16 65.21Q201.59 65.91 202.4 67.18Q203.21 68.44 203.26 70.16L199.13 70.16Q199.04 69.45 198.75 68.94Q198.45 68.43 197.97 68.15Q197.49 67.88 196.86 67.88Q196.09 67.88 195.51 68.31Q194.93 68.74 194.61 69.58Q194.29 70.42 194.29 71.65Q194.29 72.88 194.61 73.74Q194.93 74.59 195.5 75.04Q196.07 75.49 196.86 75.49Q197.77 75.49 198.38 74.87Q198.99 74.25 199.13 73.15L203.26 73.15Q203.2 74.86 202.4 76.15Q201.6 77.44 200.18 78.15Q198.76 78.86 196.8 78.86ZM211.3 78.86Q209.11 78.86 207.53 78Q205.95 77.13 205.11 75.52Q204.27 73.92 204.27 71.69Q204.27 69.54 205.11 67.92Q205.96 66.31 207.5 65.41Q209.05 64.51 211.14 64.51Q212.62 64.51 213.86 64.97Q215.1 65.44 216 66.34Q216.91 67.24 217.4 68.56Q217.89 69.88 217.89 71.61L217.89 72.71L205.8 72.71L205.8 70.16L215.78 70.16L213.72 70.76Q213.72 69.8 213.43 69.12Q213.15 68.44 212.58 68.07Q212.02 67.69 211.19 67.69Q210.36 67.69 209.78 68.07Q209.21 68.44 208.91 69.11Q208.61 69.77 208.61 70.68L208.61 72.51Q208.61 73.48 208.96 74.19Q209.3 74.9 209.93 75.28Q210.56 75.66 211.38 75.66Q211.95 75.66 212.42 75.5Q212.9 75.34 213.23 75.02Q213.57 74.7 213.74 74.25L217.8 74.37Q217.55 75.74 216.71 76.74Q215.86 77.75 214.49 78.31Q213.12 78.86 211.3 78.86ZM79.05 105.1L79.05 86.55L83.52 86.55L83.52 101.45L91.25 101.45L91.25 105.1ZM96.79 105.35Q95.46 105.35 94.42 104.89Q93.38 104.44 92.79 103.53Q92.21 102.62 92.21 101.24Q92.21 100.08 92.61 99.29Q93.02 98.49 93.73 97.99Q94.45 97.49 95.38 97.22Q96.32 96.96 97.37 96.88Q98.56 96.77 99.28 96.66Q100 96.55 100.33 96.31Q100.66 96.07 100.66 95.65L100.66 95.59Q100.66 94.9 100.19 94.52Q99.71 94.13 98.89 94.13Q98.01 94.13 97.48 94.52Q96.95 94.9 96.8 95.56L92.73 95.43Q92.9 94.16 93.66 93.15Q94.41 92.15 95.74 91.58Q97.06 91.01 98.94 91.01Q100.26 91.01 101.38 91.32Q102.5 91.63 103.34 92.23Q104.17 92.82 104.63 93.68Q105.09 94.54 105.09 95.64L105.09 105.1L100.92 105.1L100.92 103.15L100.82 103.15Q100.44 103.87 99.86 104.35Q99.29 104.84 98.53 105.09Q97.76 105.35 96.79 105.35ZM98.15 102.44Q98.86 102.44 99.43 102.14Q100.01 101.85 100.36 101.34Q100.7 100.83 100.7 100.14L100.7 98.84Q100.51 98.94 100.24 99.02Q99.98 99.1 99.65 99.17Q99.33 99.25 99 99.3Q98.67 99.35 98.37 99.4Q97.74 99.48 97.29 99.7Q96.85 99.92 96.63 100.24Q96.4 100.57 96.4 101.03Q96.4 101.71 96.89 102.07Q97.37 102.44 98.15 102.44ZM115.61 105.3Q114.57 105.3 113.8 104.95Q113.03 104.6 112.51 104.04Q111.99 103.48 111.72 102.83L111.57 102.83L111.57 105.1L107.19 105.1L107.19 86.55L111.62 86.55L111.62 93.57L111.72 93.57Q111.98 92.94 112.48 92.34Q112.99 91.75 113.77 91.38Q114.54 91.01 115.65 91.01Q117.11 91.01 118.37 91.77Q119.62 92.54 120.4 94.12Q121.18 95.7 121.18 98.15Q121.18 100.52 120.43 102.11Q119.69 103.71 118.42 104.5Q117.16 105.3 115.61 105.3ZM114.08 101.85Q114.91 101.85 115.47 101.39Q116.04 100.93 116.33 100.09Q116.62 99.26 116.62 98.15Q116.62 97.03 116.33 96.2Q116.04 95.38 115.48 94.91Q114.92 94.45 114.08 94.45Q113.27 94.45 112.7 94.9Q112.13 95.35 111.82 96.18Q111.52 97.01 111.52 98.15Q111.52 99.27 111.82 100.1Q112.13 100.93 112.7 101.39Q113.27 101.85 114.08 101.85ZM129.22 105.36Q127.03 105.36 125.46 104.46Q123.9 103.56 123.05 101.94Q122.21 100.33 122.21 98.19Q122.21 96.04 123.05 94.42Q123.9 92.81 125.46 91.91Q127.03 91.01 129.22 91.01Q131.42 91.01 132.99 91.91Q134.57 92.81 135.41 94.42Q136.25 96.04 136.25 98.19Q136.25 100.33 135.41 101.94Q134.57 103.56 132.99 104.46Q131.42 105.36 129.22 105.36ZM129.25 101.99Q130.06 101.99 130.61 101.51Q131.15 101.04 131.45 100.18Q131.74 99.31 131.74 98.16Q131.74 97.01 131.45 96.16Q131.15 95.31 130.61 94.85Q130.06 94.38 129.25 94.38Q128.44 94.38 127.87 94.85Q127.29 95.31 127.01 96.16Q126.72 97.01 126.72 98.16Q126.72 99.31 127.01 100.18Q127.29 101.04 127.87 101.51Q128.44 101.99 129.25 101.99ZM137.82 105.1L137.82 91.18L142.11 91.18L142.11 93.73L142.26 93.73Q142.63 92.34 143.5 91.67Q144.36 91.01 145.5 91.01Q145.81 91.01 146.14 91.04Q146.47 91.08 146.74 91.17L146.74 95Q146.42 94.89 145.91 94.83Q145.4 94.78 145 94.78Q144.22 94.78 143.59 95.13Q142.96 95.48 142.6 96.1Q142.25 96.72 142.25 97.54L142.25 105.1ZM151.25 105.35Q149.92 105.35 148.88 104.89Q147.84 104.44 147.25 103.53Q146.67 102.62 146.67 101.24Q146.67 100.08 147.07 99.29Q147.48 98.49 148.19 97.99Q148.91 97.49 149.84 97.22Q150.78 96.96 151.84 96.88Q153.02 96.77 153.74 96.66Q154.46 96.55 154.79 96.31Q155.12 96.07 155.12 95.65L155.12 95.59Q155.12 94.9 154.65 94.52Q154.18 94.13 153.35 94.13Q152.47 94.13 151.94 94.52Q151.41 94.9 151.26 95.56L147.19 95.43Q147.37 94.16 148.12 93.15Q148.87 92.15 150.2 91.58Q151.52 91.01 153.4 91.01Q154.72 91.01 155.84 91.32Q156.97 91.63 157.8 92.23Q158.63 92.82 159.09 93.68Q159.56 94.54 159.56 95.64L159.56 105.1L155.38 105.1L155.38 103.15L155.28 103.15Q154.9 103.87 154.33 104.35Q153.75 104.84 152.99 105.09Q152.22 105.35 151.25 105.35ZM152.61 102.44Q153.32 102.44 153.9 102.14Q154.48 101.85 154.82 101.34Q155.16 100.83 155.16 100.14L155.16 98.84Q154.97 98.94 154.71 99.02Q154.44 99.1 154.11 99.17Q153.79 99.25 153.46 99.3Q153.13 99.35 152.83 99.4Q152.2 99.48 151.75 99.7Q151.31 99.92 151.09 100.24Q150.86 100.57 150.86 101.03Q150.86 101.71 151.35 102.07Q151.84 102.44 152.61 102.44ZM169.49 91.18L169.49 94.45L160.73 94.45L160.73 91.18ZM162.56 87.87L166.98 87.87L166.98 100.72Q166.98 101.28 167.25 101.56Q167.52 101.84 168.11 101.84Q168.33 101.84 168.63 101.79Q168.92 101.74 169.08 101.69L169.74 104.9Q168.99 105.11 168.35 105.21Q167.71 105.3 167.09 105.3Q164.87 105.3 163.71 104.25Q162.56 103.19 162.56 101.22ZM177.4 105.36Q175.21 105.36 173.64 104.46Q172.07 103.56 171.23 101.94Q170.39 100.33 170.39 98.19Q170.39 96.04 171.23 94.42Q172.07 92.81 173.64 91.91Q175.21 91.01 177.4 91.01Q179.59 91.01 181.16 91.91Q182.74 92.81 183.58 94.42Q184.42 96.04 184.42 98.19Q184.42 100.33 183.58 101.94Q182.74 103.56 181.16 104.46Q179.59 105.36 177.4 105.36ZM177.42 101.99Q178.23 101.99 178.78 101.51Q179.33 101.04 179.62 100.18Q179.91 99.31 179.91 98.16Q179.91 97.01 179.62 96.16Q179.33 95.31 178.78 94.85Q178.23 94.38 177.42 94.38Q176.61 94.38 176.04 94.85Q175.47 95.31 175.18 96.16Q174.9 97.01 174.9 98.16Q174.9 99.31 175.18 100.18Q175.47 101.04 176.04 101.51Q176.61 101.99 177.42 101.99ZM185.99 105.1L185.99 91.18L190.28 91.18L190.28 93.73L190.43 93.73Q190.81 92.34 191.67 91.67Q192.54 91.01 193.67 91.01Q193.98 91.01 194.31 91.04Q194.64 91.08 194.92 91.17L194.92 95Q194.59 94.89 194.08 94.83Q193.57 94.78 193.17 94.78Q192.39 94.78 191.76 95.13Q191.13 95.48 190.78 96.1Q190.42 96.72 190.42 97.54L190.42 105.1ZM199.15 110.3Q198.35 110.32 197.64 110.19Q196.92 110.07 196.42 109.88L197.41 106.66L197.51 106.68Q198.44 106.97 199.12 106.88Q199.8 106.79 200.1 106.03L200.26 105.61L195.33 91.18L199.95 91.18L202.51 101.12L202.66 101.12L205.26 91.18L209.93 91.18L204.68 106.44Q204.3 107.58 203.61 108.45Q202.92 109.32 201.83 109.81Q200.74 110.3 199.15 110.3Z" fill="#1a1814"></path></svg>
+  </a>
+  <div class="nav-links" id="navLinks">
     <a href="#news">News</a>
     <a href="#research">Topics</a>
     <a href="#publications">Publications</a>
@@ -3229,6 +3332,9 @@
     <a href="#dataset">Dataset</a>
     <a href="#teaching">Teaching</a>
   </div>
+  <button class="nav-toggle" id="navToggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
 <!-- ============ HERO ============ -->
@@ -3236,10 +3342,10 @@
   <div class="hero-left">
     <div class="eyebrow">PNU / Electronic Engineering / Est. 2026</div>
     <h1 class="hero-title">
-      Beyond the<br /><em>five senses.</em><br />Supersensory<br />intelligence.
+      Beyond the<br /><em>five senses.</em><br />Extended physical<br />intelligence.
     </h1>
     <p class="hero-sub">
-      We go beyond simple data learning to reach the pinnacle of <strong>Physical Intelligence</strong>, where the <em>laws of physics meet AI</em>. Our goal is to create next-generation autonomous systems that can think and move safely in the toughest real-world environments, from <strong>Robotics</strong> to <strong>Industrial AI</strong>.
+      We study <strong>Physical Intelligence</strong> — perception, decision-making, and action grounded in <em>the laws of physics</em>, not data alone. Our systems are built to perceive, reason, and act reliably in complex real-world settings, across <strong>Autonomous Vehicles</strong>, <strong>Robotics</strong>, and <strong>Industrial AI</strong>.
     </p>
   </div>
 
@@ -3793,7 +3899,7 @@
       <div class="tag-row">
         <span class="tag">NLoS Perception</span>
         <span class="tag">Multi-modal Sensing</span>
-        <span class="tag">Supersensory Perception</span>
+        <span class="tag">Extended Perception</span>
         <span class="tag">Decision Making</span>
       </div>
       <div class="card-pubs">
@@ -3966,19 +4072,35 @@
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="journal">Journals</button>
         <button class="filter-btn" data-filter="conf">Conferences</button>
+        <span class="filter-break" aria-hidden="true"></span>
         <button class="filter-btn" data-filter="patent">Patents</button>
         <button class="filter-btn" data-filter="review">Under Review</button>
         <button class="filter-btn" data-filter="domestic">Domestic</button>
       </div>
+      <select class="pub-filter-select" id="typeFilterSelect" aria-label="Filter publications by type">
+        <option value="all">All</option>
+        <option value="journal">Journals</option>
+        <option value="conf">Conferences</option>
+        <option value="patent">Patents</option>
+        <option value="review">Under Review</option>
+        <option value="domestic">Domestic</option>
+      </select>
     </div>
     <div class="pub-filter-row">
       <span class="pub-filter-label">Topic</span>
       <div class="pub-filter-buttons">
         <button class="filter-btn active" data-topic-filter="all">All</button>
-        <button class="filter-btn" data-topic-filter="thread1">Autonomous Vehicle &amp; Robotics</button>
-        <button class="filter-btn" data-topic-filter="thread2">Smart Manufacturing &amp; AI Systems</button>
-        <button class="filter-btn" data-topic-filter="thread3">Real-to-Sim &amp; Data Synthesis</button>
+        <button class="filter-btn" data-topic-filter="thread1"><span class="t-full">Autonomous Vehicle &amp; Robotics</span><span class="t-short">Autonomous &amp; Robotics</span></button>
+        <span class="filter-break" aria-hidden="true"></span>
+        <button class="filter-btn" data-topic-filter="thread2"><span class="t-full">Smart Manufacturing &amp; AI Systems</span><span class="t-short">Manufacturing &amp; AI</span></button>
+        <button class="filter-btn" data-topic-filter="thread3"><span class="t-full">Real-to-Sim &amp; Data Synthesis</span><span class="t-short">Real-to-Sim &amp; Data</span></button>
       </div>
+      <select class="pub-filter-select" id="topicFilterSelect" aria-label="Filter publications by topic">
+        <option value="all">All Topics</option>
+        <option value="thread1">Autonomous Vehicle &amp; Robotics</option>
+        <option value="thread2">Smart Manufacturing &amp; AI Systems</option>
+        <option value="thread3">Real-to-Sim &amp; Data Synthesis</option>
+      </select>
     </div>
   </div>
 
@@ -4221,7 +4343,7 @@
       </div>
       
       <p>
-        Mingu Jeon is an Assistant Professor in the Department of Electronic Engineering at Pusan National University. His research pursues Supersensory Intelligence, building perception systems that reach beyond the five senses through radar, sound, and physics-grounded AI.
+        Mingu Jeon is an Assistant Professor in the Department of Electronic Engineering at Pusan National University. His research pursues Extended Physical Intelligence, building perception systems that reach beyond the five senses through radar, sound, and physics-grounded AI.
       </p>
       <p>
         He received his Ph.D. in Electrical and Computer Engineering from Seoul National University in 2025 under the joint supervision of Prof. Seung-Woo Seo and Prof. Seong-Woo Kim, and his B.S. in Electrical Engineering from POSTECH in 2017.
@@ -4264,12 +4386,12 @@
       </div>
     </div>
     <div class="member-card">
-      <div class="member-avatar">J.P.</div>
+      <div class="member-avatar"><img src="data:image/jpeg;base64,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" alt="Jaemin Park" /></div>
       <h5>Jaemin <em>Park</em></h5>
       <span class="member-role is-ug">Undergraduate Researcher</span>
       <p class="member-interest"></p>
       <div class="member-links">
-        <a href="#">Email</a>
+        <span class="member-email">awoals0325@pusan.ac.kr</span>
       </div>
     </div>
   </div>
@@ -4283,8 +4405,8 @@
       <div class="cn-node" data-key="ksu" data-bx="0.79" data-by="0.21" role="button" tabindex="0" aria-label="Kennesaw State University"><span class="cn-label"><span class="cn-line">Kennesaw State</span><span class="cn-line cn-last">University<span class="cn-cc">US</span></span></span><div class="cn-detail"><button class="cn-close" aria-label="Close">&times;</button><div class="cn-eyebrow">Institution</div><div class="cn-name">Kennesaw State University</div><ul class="cn-people"><li><span class="cn-person">Soomok Lee</span><span class="cn-role">Assistant Professor</span></li></ul></div></div>
       <div class="cn-node" data-key="cnu" data-bx="0.18" data-by="0.78" role="button" tabindex="0" aria-label="Chungnam National University"><span class="cn-label"><span class="cn-line">Chungnam National</span><span class="cn-line cn-last">University<span class="cn-cc">KR</span></span></span><div class="cn-detail"><button class="cn-close" aria-label="Close">&times;</button><div class="cn-eyebrow">Institution</div><div class="cn-name">Chungnam National University</div><ul class="cn-people"><li><span class="cn-person">Jun Kim</span><span class="cn-role">Assistant Professor</span></li></ul></div></div>
       <div class="cn-node" data-key="gcu" data-bx="0.81" data-by="0.73" role="button" tabindex="0" aria-label="Gachon University"><span class="cn-label"><span class="cn-line cn-last">Gachon University<span class="cn-cc">KR</span></span></span><div class="cn-detail"><button class="cn-close" aria-label="Close">&times;</button><div class="cn-eyebrow">Institution</div><div class="cn-name">Gachon University</div><ul class="cn-people"><li><span class="cn-person">Ilchae Jung</span><span class="cn-role">Assistant Professor</span></li></ul></div></div>
-      <div class="collab-hint" id="cnHint">Tap an institution to see its researchers</div>
     </div>
+    <div class="collab-hint" id="cnHint">Tap an institution to see its researchers</div>
   </div>
 
 </section>
@@ -4302,7 +4424,7 @@
   </div>
 
   <div class="proj-group" data-thread="01">
-    <h3 class="proj-thread"><span class="proj-thread-id">Thread 01</span><span class="proj-thread-name">Autonomous Vehicle &amp; Robotics</span></h3>
+    <h3 class="proj-thread"><span class="proj-thread-id">Thread 01</span><span class="proj-thread-name"><span class="ptn-a">Autonomous Vehicle &amp;</span> <span class="ptn-b">Robotics</span></span></h3>
     <div class="pub-list">
 
       <div class="pub-item proj-card" data-type="ongoing">
@@ -4366,7 +4488,7 @@
   </div>
 
   <div class="proj-group" data-thread="02">
-    <h3 class="proj-thread"><span class="proj-thread-id">Thread 02</span><span class="proj-thread-name">Smart Manufacturing &amp; AI Systems</span></h3>
+    <h3 class="proj-thread"><span class="proj-thread-id">Thread 02</span><span class="proj-thread-name"><span class="ptn-a">Smart Manufacturing &amp;</span> <span class="ptn-b">AI Systems</span></span></h3>
     <div class="pub-list">
 
       <div class="pub-item proj-card" data-type="ongoing">
@@ -4449,11 +4571,11 @@
       <h3 class="dataset-title">ARIL Dataset</h3>
       <div class="dataset-full">Acoustic Recognition based Invisible-target Localization</div>
 
-      <p class="dataset-lead">The ARIL dataset is procured to advance the study of a model dedicated to the detection and localization of <strong>Non-Line-of-Sight (NLoS)</strong> vehicles. The dataset is centered on identifying NLoS vehicles, and encompasses variations in velocity (5, 10, 15, 20 km/h), the direction of travel for NLoS vehicles (left, right), and different spatial arrangements (T-Junction configurations, with and without opposite-side wall).</p>
+      <p class="dataset-lead">The ARIL dataset supports research on detecting and localizing <strong>Non-Line-of-Sight (NLoS)</strong> vehicles. It spans variations in velocity (5, 10, 15, 20 km/h), direction of travel (left, right), and spatial layout (T-Junction configurations, with and without an opposite-side wall).</p>
 
-      <p>ARIL dataset is amassed within a carefully constructed test bed designed to mirror the conditions encountered on actual roads. To ensure meticulous ground truth data collection and to encapsulate the entirety of the test bed within a singular view, a 12-megapixel camera equipped with a fisheye lens offering a 185&deg; field of view was utilized as the Bird's Eye View (BEV) Camera. This camera was strategically mounted at an elevation of 7 m above the intersection's center within each spatial layout. An SUV outfitted with a microphone array and camera served as the primary vehicle for data collection. Location of the NLoS vehicle was acquired from the BEV camera. The total acquired data size is 11.7 TB.</p>
+      <p>ARIL was collected in a controlled test bed that reproduces real road conditions. To capture the full scene and ground truth in a single view, a 12-megapixel fisheye camera (185&deg; field of view) was mounted 7 m above the intersection center as the Bird's-Eye-View (BEV) camera. An SUV equipped with a microphone array and camera served as the data-collection vehicle, and the NLoS vehicle's location was obtained from the BEV camera. The total dataset size is 11.7 TB.</p>
 
-      <p>Each scenario is documented through a series of data captures and the location of the NLoS vehicle: one sound sequence, one BEV image sequence, and one .xlsx file. The audio data was captured at a fidelity of 48,000 Hz, while BEV image data was collected at a frequency of 10 Hz.</p>
+      <p>Each scenario provides one sound sequence, one BEV image sequence, and one .xlsx file with the NLoS vehicle's location. Audio was recorded at 48,000 Hz and BEV images at 10 Hz.</p>
 
       <a class="pub-btn dataset-access" href="https://drive.google.com/file/d/1-_sEHaIu0YFbq-Y9PJLxW90KdqeW9c6R/view" target="_blank" rel="noopener">Access Dataset</a>
     </div>
@@ -4530,7 +4652,11 @@
 <footer id="contact">
   <div class="footer-grid">
     <div>
-      <div class="footer-brand">Supersensory Physical Intelligence Laboratory</div>
+      <div class="footer-brand"><svg class="footer-logo" viewBox="0 0 252 116" aria-label="Extended Physical Intelligence Laboratory"><rect x="0" y="7" width="15" height="98" fill="#f4f1ea"></rect>
+  <rect x="0" y="7" width="56" height="15" fill="#f4f1ea"></rect>
+  <rect x="0" y="48.5" width="48" height="15" fill="#c8402b"></rect>
+  <rect x="0" y="90" width="64" height="15" fill="#f4f1ea"></rect>
+  <path d="M79.05 25.6L79.05 7.05L91.98 7.05L91.98 10.7L83.52 10.7L83.52 14.44L91.31 14.44L91.31 18L83.52 18L83.52 21.95L91.97 21.95L91.97 25.6ZM97.83 11.68L100.11 16.29L102.49 11.68L106.96 11.68L103.08 18.65L107.11 25.6L102.67 25.6L100.11 20.99L97.64 25.6L93.14 25.6L97.19 18.65L93.34 11.68ZM116.11 11.68L116.11 14.95L107.35 14.95L107.35 11.68ZM109.18 8.37L113.6 8.37L113.6 21.22Q113.6 21.78 113.87 22.06Q114.15 22.34 114.73 22.34Q114.96 22.34 115.25 22.29Q115.54 22.24 115.7 22.19L116.36 25.4Q115.61 25.61 114.97 25.71Q114.33 25.8 113.71 25.8Q111.49 25.8 110.34 24.75Q109.18 23.69 109.18 21.72ZM124.04 25.86Q121.85 25.86 120.27 25Q118.69 24.13 117.85 22.52Q117.01 20.92 117.01 18.69Q117.01 16.54 117.86 14.92Q118.7 13.31 120.25 12.41Q121.79 11.51 123.88 11.51Q125.36 11.51 126.6 11.97Q127.84 12.44 128.74 13.34Q129.65 14.24 130.14 15.56Q130.63 16.88 130.63 18.61L130.63 19.71L118.54 19.71L118.54 17.16L128.53 17.16L126.46 17.76Q126.46 16.8 126.17 16.12Q125.89 15.44 125.33 15.07Q124.77 14.69 123.93 14.69Q123.1 14.69 122.53 15.07Q121.95 15.44 121.65 16.11Q121.35 16.77 121.35 17.68L121.35 19.51Q121.35 20.48 121.7 21.19Q122.04 21.9 122.67 22.28Q123.3 22.66 124.12 22.66Q124.69 22.66 125.17 22.5Q125.64 22.34 125.97 22.02Q126.31 21.7 126.48 21.25L130.54 21.37Q130.29 22.74 129.45 23.74Q128.6 24.75 127.23 25.31Q125.86 25.86 124.04 25.86ZM136.58 17.67L136.58 25.6L132.15 25.6L132.15 11.68L136.53 11.68L136.53 14.24L136.65 14.24Q137.12 12.97 138.16 12.24Q139.2 11.51 140.74 11.51Q142.21 11.51 143.29 12.16Q144.38 12.81 144.97 13.99Q145.57 15.17 145.57 16.73L145.57 25.6L141.14 25.6L141.14 17.61Q141.14 16.45 140.55 15.79Q139.97 15.14 138.91 15.14Q138.21 15.14 137.69 15.44Q137.17 15.74 136.88 16.31Q136.58 16.87 136.58 17.67ZM152.69 25.8Q151.16 25.8 149.9 25Q148.64 24.21 147.89 22.61Q147.14 21.02 147.14 18.65Q147.14 16.2 147.92 14.62Q148.7 13.04 149.96 12.27Q151.21 11.51 152.67 11.51Q153.77 11.51 154.54 11.88Q155.32 12.25 155.83 12.84Q156.34 13.44 156.6 14.07L156.69 14.07L156.69 7.05L161.12 7.05L161.12 25.6L156.75 25.6L156.75 23.33L156.6 23.33Q156.32 23.98 155.81 24.54Q155.3 25.1 154.52 25.45Q153.75 25.8 152.69 25.8ZM154.23 22.35Q155.04 22.35 155.61 21.89Q156.18 21.43 156.49 20.6Q156.8 19.77 156.8 18.65Q156.8 17.51 156.5 16.68Q156.19 15.85 155.61 15.4Q155.04 14.95 154.23 14.95Q153.42 14.95 152.84 15.41Q152.27 15.88 151.98 16.7Q151.69 17.53 151.69 18.65Q151.69 19.76 151.98 20.59Q152.28 21.43 152.85 21.89Q153.42 22.35 154.23 22.35ZM169.73 25.86Q167.54 25.86 165.96 25Q164.37 24.13 163.53 22.52Q162.69 20.92 162.69 18.69Q162.69 16.54 163.54 14.92Q164.39 13.31 165.93 12.41Q167.47 11.51 169.57 11.51Q171.05 11.51 172.29 11.97Q173.53 12.44 174.43 13.34Q175.33 14.24 175.82 15.56Q176.31 16.88 176.31 18.61L176.31 19.71L164.22 19.71L164.22 17.16L174.21 17.16L172.14 17.76Q172.14 16.8 171.86 16.12Q171.57 15.44 171.01 15.07Q170.45 14.69 169.62 14.69Q168.78 14.69 168.21 15.07Q167.64 15.44 167.34 16.11Q167.04 16.77 167.04 17.68L167.04 19.51Q167.04 20.48 167.38 21.19Q167.72 21.9 168.35 22.28Q168.98 22.66 169.8 22.66Q170.38 22.66 170.85 22.5Q171.32 22.34 171.66 22.02Q171.99 21.7 172.17 21.25L176.23 21.37Q175.98 22.74 175.13 23.74Q174.28 24.75 172.92 25.31Q171.55 25.86 169.73 25.86ZM182.86 25.8Q181.33 25.8 180.07 25Q178.8 24.21 178.06 22.61Q177.31 21.02 177.31 18.65Q177.31 16.2 178.09 14.62Q178.87 13.04 180.12 12.27Q181.38 11.51 182.84 11.51Q183.93 11.51 184.71 11.88Q185.49 12.25 186 12.84Q186.51 13.44 186.77 14.07L186.86 14.07L186.86 7.05L191.29 7.05L191.29 25.6L186.92 25.6L186.92 23.33L186.77 23.33Q186.49 23.98 185.98 24.54Q185.47 25.1 184.69 25.45Q183.92 25.8 182.86 25.8ZM184.4 22.35Q185.2 22.35 185.78 21.89Q186.35 21.43 186.66 20.6Q186.97 19.77 186.97 18.65Q186.97 17.51 186.67 16.68Q186.36 15.85 185.78 15.4Q185.2 14.95 184.4 14.95Q183.59 14.95 183.01 15.41Q182.44 15.88 182.15 16.7Q181.86 17.53 181.86 18.65Q181.86 19.76 182.15 20.59Q182.45 21.43 183.02 21.89Q183.59 22.35 184.4 22.35ZM79.05 52.1L79.05 33.55L86.69 33.55Q88.78 33.55 90.3 34.36Q91.82 35.17 92.65 36.62Q93.48 38.07 93.48 39.99Q93.48 41.9 92.64 43.33Q91.8 44.77 90.24 45.56Q88.68 46.35 86.57 46.35L81.83 46.35L81.83 42.81L85.73 42.81Q86.74 42.81 87.43 42.46Q88.12 42.1 88.48 41.47Q88.83 40.83 88.83 39.99Q88.83 39.11 88.48 38.48Q88.12 37.86 87.43 37.51Q86.74 37.17 85.72 37.17L83.52 37.17L83.52 52.1ZM99.39 44.17L99.39 52.1L94.96 52.1L94.96 33.55L99.23 33.55L99.23 40.74L99.39 40.74Q99.86 39.46 100.94 38.73Q102.01 38.01 103.57 38.01Q105.03 38.01 106.12 38.66Q107.21 39.31 107.81 40.48Q108.41 41.65 108.41 43.23L108.41 52.1L103.97 52.1L103.97 44.11Q103.97 42.95 103.39 42.29Q102.8 41.64 101.73 41.64Q101.03 41.64 100.51 41.94Q99.98 42.24 99.68 42.81Q99.39 43.37 99.39 44.17ZM112.73 57.3Q111.93 57.32 111.21 57.19Q110.5 57.07 110 56.88L110.98 53.66L111.08 53.68Q112.02 53.97 112.7 53.88Q113.37 53.79 113.67 53.03L113.83 52.61L108.9 38.18L113.52 38.18L116.09 48.12L116.24 48.12L118.84 38.18L123.51 38.18L118.25 53.44Q117.88 54.58 117.19 55.45Q116.5 56.32 115.41 56.81Q114.32 57.3 112.73 57.3ZM136.61 42.44L132.56 42.54Q132.47 41.89 131.89 41.47Q131.32 41.04 130.44 41.04Q129.67 41.04 129.14 41.35Q128.61 41.65 128.61 42.18Q128.61 42.59 128.94 42.9Q129.27 43.21 130.16 43.38L132.83 43.88Q134.91 44.27 135.94 45.19Q136.96 46.11 136.96 47.64Q136.96 49.07 136.12 50.13Q135.29 51.19 133.84 51.78Q132.39 52.36 130.52 52.36Q127.54 52.36 125.82 51.14Q124.11 49.91 123.86 47.84L128.23 47.74Q128.38 48.5 128.99 48.89Q129.6 49.29 130.53 49.29Q131.39 49.29 131.93 48.97Q132.46 48.65 132.46 48.14Q132.46 47.26 130.77 46.93L128.34 46.46Q126.26 46.06 125.23 45.05Q124.21 44.04 124.21 42.44Q124.21 41.03 124.96 40.05Q125.71 39.06 127.09 38.53Q128.48 38.01 130.37 38.01Q133.2 38.01 134.82 39.19Q136.45 40.37 136.61 42.44ZM138.43 52.1L138.43 38.18L142.86 38.18L142.86 52.1ZM140.63 36.59Q139.7 36.59 139.02 35.96Q138.35 35.34 138.35 34.46Q138.35 33.57 139.02 32.96Q139.7 32.34 140.63 32.34Q141.58 32.34 142.24 32.96Q142.91 33.57 142.91 34.46Q142.91 35.34 142.24 35.96Q141.58 36.59 140.63 36.59ZM151.44 52.36Q149.23 52.36 147.66 51.45Q146.1 50.54 145.26 48.93Q144.43 47.32 144.43 45.19Q144.43 43.05 145.26 41.44Q146.1 39.82 147.67 38.91Q149.25 38.01 151.44 38.01Q153.37 38.01 154.8 38.71Q156.23 39.41 157.04 40.68Q157.85 41.94 157.9 43.66L153.77 43.66Q153.68 42.95 153.39 42.44Q153.09 41.93 152.61 41.65Q152.13 41.38 151.5 41.38Q150.73 41.38 150.15 41.81Q149.57 42.24 149.25 43.08Q148.93 43.92 148.93 45.15Q148.93 46.38 149.25 47.24Q149.57 48.09 150.14 48.54Q150.71 48.99 151.5 48.99Q152.41 48.99 153.02 48.37Q153.63 47.75 153.77 46.65L157.9 46.65Q157.84 48.36 157.04 49.65Q156.24 50.94 154.82 51.65Q153.4 52.36 151.44 52.36ZM163.37 52.35Q162.03 52.35 160.99 51.89Q159.95 51.44 159.37 50.53Q158.78 49.62 158.78 48.24Q158.78 47.08 159.19 46.29Q159.59 45.49 160.31 44.99Q161.02 44.49 161.96 44.22Q162.89 43.96 163.95 43.88Q165.13 43.77 165.86 43.66Q166.58 43.55 166.91 43.31Q167.24 43.07 167.24 42.65L167.24 42.59Q167.24 41.9 166.76 41.52Q166.29 41.13 165.47 41.13Q164.59 41.13 164.06 41.52Q163.53 41.9 163.38 42.56L159.31 42.43Q159.48 41.16 160.23 40.15Q160.99 39.15 162.31 38.58Q163.64 38.01 165.52 38.01Q166.84 38.01 167.96 38.32Q169.08 38.63 169.91 39.23Q170.75 39.82 171.21 40.68Q171.67 41.54 171.67 42.64L171.67 52.1L167.5 52.1L167.5 50.15L167.4 50.15Q167.01 50.87 166.44 51.35Q165.87 51.84 165.1 52.09Q164.34 52.35 163.37 52.35ZM164.72 49.44Q165.43 49.44 166.01 49.14Q166.59 48.85 166.93 48.34Q167.27 47.83 167.27 47.14L167.27 45.84Q167.09 45.94 166.82 46.02Q166.55 46.1 166.23 46.17Q165.91 46.25 165.58 46.3Q165.25 46.35 164.95 46.4Q164.31 46.48 163.87 46.7Q163.43 46.92 163.2 47.24Q162.98 47.57 162.98 48.03Q162.98 48.71 163.46 49.07Q163.95 49.44 164.72 49.44ZM178.19 33.55L178.19 52.1L173.76 52.1L173.76 33.55ZM83.52 60.05L83.52 78.6L79.05 78.6L79.05 60.05ZM90.04 70.67L90.04 78.6L85.61 78.6L85.61 64.68L89.99 64.68L89.99 67.24L90.1 67.24Q90.58 65.97 91.62 65.24Q92.66 64.51 94.2 64.51Q95.67 64.51 96.75 65.16Q97.83 65.81 98.43 66.99Q99.03 68.17 99.03 69.73L99.03 78.6L94.6 78.6L94.6 70.61Q94.6 69.45 94.01 68.79Q93.43 68.14 92.37 68.14Q91.67 68.14 91.15 68.44Q90.63 68.74 90.33 69.31Q90.04 69.87 90.04 70.67ZM108.97 64.68L108.97 67.95L100.2 67.95L100.2 64.68ZM102.03 61.37L106.45 61.37L106.45 74.22Q106.45 74.78 106.72 75.06Q107 75.34 107.58 75.34Q107.81 75.34 108.1 75.29Q108.39 75.24 108.56 75.19L109.22 78.4Q108.47 78.61 107.83 78.71Q107.19 78.8 106.56 78.8Q104.35 78.8 103.19 77.75Q102.03 76.69 102.03 74.72ZM116.9 78.86Q114.71 78.86 113.12 78Q111.54 77.13 110.7 75.52Q109.86 73.92 109.86 71.69Q109.86 69.54 110.71 67.92Q111.56 66.31 113.1 65.41Q114.64 64.51 116.74 64.51Q118.22 64.51 119.46 64.97Q120.7 65.44 121.6 66.34Q122.5 67.24 122.99 68.56Q123.48 69.88 123.48 71.61L123.48 72.71L111.39 72.71L111.39 70.16L121.38 70.16L119.31 70.76Q119.31 69.8 119.03 69.12Q118.74 68.44 118.18 68.07Q117.62 67.69 116.79 67.69Q115.95 67.69 115.38 68.07Q114.81 68.44 114.51 69.11Q114.21 69.77 114.21 70.68L114.21 72.51Q114.21 73.48 114.55 74.19Q114.89 74.9 115.52 75.28Q116.15 75.66 116.97 75.66Q117.54 75.66 118.02 75.5Q118.49 75.34 118.83 75.02Q119.16 74.7 119.34 74.25L123.4 74.37Q123.15 75.74 122.3 76.74Q121.45 77.75 120.08 78.31Q118.72 78.86 116.9 78.86ZM129.44 60.05L129.44 78.6L125 78.6L125 60.05ZM135.96 60.05L135.96 78.6L131.53 78.6L131.53 60.05ZM138.05 78.6L138.05 64.68L142.48 64.68L142.48 78.6ZM140.26 63.09Q139.32 63.09 138.65 62.46Q137.98 61.84 137.98 60.96Q137.98 60.07 138.65 59.46Q139.32 58.84 140.26 58.84Q141.2 58.84 141.87 59.46Q142.53 60.07 142.53 60.96Q142.53 61.84 141.87 62.46Q141.2 63.09 140.26 63.09ZM151.03 84.1Q148.05 84.1 146.37 82.9Q144.69 81.69 144.45 79.86L148.64 79.62Q148.75 80.06 149.07 80.37Q149.38 80.69 149.91 80.87Q150.43 81.04 151.14 81.04Q152.26 81.04 152.99 80.5Q153.72 79.96 153.72 78.62L153.72 76.17L153.55 76.17Q153.29 76.81 152.76 77.32Q152.22 77.83 151.43 78.12Q150.64 78.41 149.61 78.41Q148.09 78.41 146.82 77.7Q145.56 76.99 144.81 75.49Q144.05 73.99 144.05 71.64Q144.05 69.19 144.83 67.61Q145.61 66.04 146.88 65.27Q148.15 64.51 149.61 64.51Q150.7 64.51 151.49 64.88Q152.27 65.25 152.79 65.84Q153.32 66.44 153.58 67.07L153.7 67.07L153.7 64.68L158.07 64.68L158.07 78.66Q158.07 80.42 157.18 81.64Q156.29 82.86 154.71 83.48Q153.12 84.1 151.03 84.1ZM151.15 75.19Q152.36 75.19 153.04 74.24Q153.72 73.3 153.72 71.63Q153.72 70.49 153.41 69.67Q153.11 68.85 152.53 68.4Q151.96 67.95 151.15 67.95Q150.33 67.95 149.76 68.41Q149.18 68.88 148.89 69.7Q148.6 70.52 148.6 71.63Q148.6 72.74 148.9 73.53Q149.2 74.33 149.76 74.76Q150.33 75.19 151.15 75.19ZM166.69 78.86Q164.5 78.86 162.92 78Q161.34 77.13 160.5 75.52Q159.65 73.92 159.65 71.69Q159.65 69.54 160.5 67.92Q161.35 66.31 162.89 65.41Q164.44 64.51 166.53 64.51Q168.01 64.51 169.25 64.97Q170.49 65.44 171.39 66.34Q172.29 67.24 172.78 68.56Q173.28 69.88 173.28 71.61L173.28 72.71L161.19 72.71L161.19 70.16L171.17 70.16L169.11 70.76Q169.11 69.8 168.82 69.12Q168.53 68.44 167.97 68.07Q167.41 67.69 166.58 67.69Q165.74 67.69 165.17 68.07Q164.6 68.44 164.3 69.11Q164 69.77 164 70.68L164 72.51Q164 73.48 164.34 74.19Q164.69 74.9 165.31 75.28Q165.94 75.66 166.76 75.66Q167.34 75.66 167.81 75.5Q168.28 75.34 168.62 75.02Q168.96 74.7 169.13 74.25L173.19 74.37Q172.94 75.74 172.09 76.74Q171.25 77.75 169.88 78.31Q168.51 78.86 166.69 78.86ZM179.23 70.67L179.23 78.6L174.8 78.6L174.8 64.68L179.18 64.68L179.18 67.24L179.29 67.24Q179.76 65.97 180.8 65.24Q181.84 64.51 183.39 64.51Q184.86 64.51 185.94 65.16Q187.02 65.81 187.62 66.99Q188.22 68.17 188.22 69.73L188.22 78.6L183.79 78.6L183.79 70.61Q183.79 69.45 183.2 68.79Q182.61 68.14 181.56 68.14Q180.86 68.14 180.34 68.44Q179.81 68.74 179.52 69.31Q179.23 69.87 179.23 70.67ZM196.8 78.86Q194.59 78.86 193.02 77.95Q191.46 77.04 190.62 75.43Q189.79 73.82 189.79 71.69Q189.79 69.55 190.62 67.94Q191.46 66.32 193.03 65.41Q194.61 64.51 196.8 64.51Q198.73 64.51 200.16 65.21Q201.59 65.91 202.4 67.18Q203.21 68.44 203.26 70.16L199.13 70.16Q199.04 69.45 198.75 68.94Q198.45 68.43 197.97 68.15Q197.49 67.88 196.86 67.88Q196.09 67.88 195.51 68.31Q194.93 68.74 194.61 69.58Q194.29 70.42 194.29 71.65Q194.29 72.88 194.61 73.74Q194.93 74.59 195.5 75.04Q196.07 75.49 196.86 75.49Q197.77 75.49 198.38 74.87Q198.99 74.25 199.13 73.15L203.26 73.15Q203.2 74.86 202.4 76.15Q201.6 77.44 200.18 78.15Q198.76 78.86 196.8 78.86ZM211.3 78.86Q209.11 78.86 207.53 78Q205.95 77.13 205.11 75.52Q204.27 73.92 204.27 71.69Q204.27 69.54 205.11 67.92Q205.96 66.31 207.5 65.41Q209.05 64.51 211.14 64.51Q212.62 64.51 213.86 64.97Q215.1 65.44 216 66.34Q216.91 67.24 217.4 68.56Q217.89 69.88 217.89 71.61L217.89 72.71L205.8 72.71L205.8 70.16L215.78 70.16L213.72 70.76Q213.72 69.8 213.43 69.12Q213.15 68.44 212.58 68.07Q212.02 67.69 211.19 67.69Q210.36 67.69 209.78 68.07Q209.21 68.44 208.91 69.11Q208.61 69.77 208.61 70.68L208.61 72.51Q208.61 73.48 208.96 74.19Q209.3 74.9 209.93 75.28Q210.56 75.66 211.38 75.66Q211.95 75.66 212.42 75.5Q212.9 75.34 213.23 75.02Q213.57 74.7 213.74 74.25L217.8 74.37Q217.55 75.74 216.71 76.74Q215.86 77.75 214.49 78.31Q213.12 78.86 211.3 78.86ZM79.05 105.1L79.05 86.55L83.52 86.55L83.52 101.45L91.25 101.45L91.25 105.1ZM96.79 105.35Q95.46 105.35 94.42 104.89Q93.38 104.44 92.79 103.53Q92.21 102.62 92.21 101.24Q92.21 100.08 92.61 99.29Q93.02 98.49 93.73 97.99Q94.45 97.49 95.38 97.22Q96.32 96.96 97.37 96.88Q98.56 96.77 99.28 96.66Q100 96.55 100.33 96.31Q100.66 96.07 100.66 95.65L100.66 95.59Q100.66 94.9 100.19 94.52Q99.71 94.13 98.89 94.13Q98.01 94.13 97.48 94.52Q96.95 94.9 96.8 95.56L92.73 95.43Q92.9 94.16 93.66 93.15Q94.41 92.15 95.74 91.58Q97.06 91.01 98.94 91.01Q100.26 91.01 101.38 91.32Q102.5 91.63 103.34 92.23Q104.17 92.82 104.63 93.68Q105.09 94.54 105.09 95.64L105.09 105.1L100.92 105.1L100.92 103.15L100.82 103.15Q100.44 103.87 99.86 104.35Q99.29 104.84 98.53 105.09Q97.76 105.35 96.79 105.35ZM98.15 102.44Q98.86 102.44 99.43 102.14Q100.01 101.85 100.36 101.34Q100.7 100.83 100.7 100.14L100.7 98.84Q100.51 98.94 100.24 99.02Q99.98 99.1 99.65 99.17Q99.33 99.25 99 99.3Q98.67 99.35 98.37 99.4Q97.74 99.48 97.29 99.7Q96.85 99.92 96.63 100.24Q96.4 100.57 96.4 101.03Q96.4 101.71 96.89 102.07Q97.37 102.44 98.15 102.44ZM115.61 105.3Q114.57 105.3 113.8 104.95Q113.03 104.6 112.51 104.04Q111.99 103.48 111.72 102.83L111.57 102.83L111.57 105.1L107.19 105.1L107.19 86.55L111.62 86.55L111.62 93.57L111.72 93.57Q111.98 92.94 112.48 92.34Q112.99 91.75 113.77 91.38Q114.54 91.01 115.65 91.01Q117.11 91.01 118.37 91.77Q119.62 92.54 120.4 94.12Q121.18 95.7 121.18 98.15Q121.18 100.52 120.43 102.11Q119.69 103.71 118.42 104.5Q117.16 105.3 115.61 105.3ZM114.08 101.85Q114.91 101.85 115.47 101.39Q116.04 100.93 116.33 100.09Q116.62 99.26 116.62 98.15Q116.62 97.03 116.33 96.2Q116.04 95.38 115.48 94.91Q114.92 94.45 114.08 94.45Q113.27 94.45 112.7 94.9Q112.13 95.35 111.82 96.18Q111.52 97.01 111.52 98.15Q111.52 99.27 111.82 100.1Q112.13 100.93 112.7 101.39Q113.27 101.85 114.08 101.85ZM129.22 105.36Q127.03 105.36 125.46 104.46Q123.9 103.56 123.05 101.94Q122.21 100.33 122.21 98.19Q122.21 96.04 123.05 94.42Q123.9 92.81 125.46 91.91Q127.03 91.01 129.22 91.01Q131.42 91.01 132.99 91.91Q134.57 92.81 135.41 94.42Q136.25 96.04 136.25 98.19Q136.25 100.33 135.41 101.94Q134.57 103.56 132.99 104.46Q131.42 105.36 129.22 105.36ZM129.25 101.99Q130.06 101.99 130.61 101.51Q131.15 101.04 131.45 100.18Q131.74 99.31 131.74 98.16Q131.74 97.01 131.45 96.16Q131.15 95.31 130.61 94.85Q130.06 94.38 129.25 94.38Q128.44 94.38 127.87 94.85Q127.29 95.31 127.01 96.16Q126.72 97.01 126.72 98.16Q126.72 99.31 127.01 100.18Q127.29 101.04 127.87 101.51Q128.44 101.99 129.25 101.99ZM137.82 105.1L137.82 91.18L142.11 91.18L142.11 93.73L142.26 93.73Q142.63 92.34 143.5 91.67Q144.36 91.01 145.5 91.01Q145.81 91.01 146.14 91.04Q146.47 91.08 146.74 91.17L146.74 95Q146.42 94.89 145.91 94.83Q145.4 94.78 145 94.78Q144.22 94.78 143.59 95.13Q142.96 95.48 142.6 96.1Q142.25 96.72 142.25 97.54L142.25 105.1ZM151.25 105.35Q149.92 105.35 148.88 104.89Q147.84 104.44 147.25 103.53Q146.67 102.62 146.67 101.24Q146.67 100.08 147.07 99.29Q147.48 98.49 148.19 97.99Q148.91 97.49 149.84 97.22Q150.78 96.96 151.84 96.88Q153.02 96.77 153.74 96.66Q154.46 96.55 154.79 96.31Q155.12 96.07 155.12 95.65L155.12 95.59Q155.12 94.9 154.65 94.52Q154.18 94.13 153.35 94.13Q152.47 94.13 151.94 94.52Q151.41 94.9 151.26 95.56L147.19 95.43Q147.37 94.16 148.12 93.15Q148.87 92.15 150.2 91.58Q151.52 91.01 153.4 91.01Q154.72 91.01 155.84 91.32Q156.97 91.63 157.8 92.23Q158.63 92.82 159.09 93.68Q159.56 94.54 159.56 95.64L159.56 105.1L155.38 105.1L155.38 103.15L155.28 103.15Q154.9 103.87 154.33 104.35Q153.75 104.84 152.99 105.09Q152.22 105.35 151.25 105.35ZM152.61 102.44Q153.32 102.44 153.9 102.14Q154.48 101.85 154.82 101.34Q155.16 100.83 155.16 100.14L155.16 98.84Q154.97 98.94 154.71 99.02Q154.44 99.1 154.11 99.17Q153.79 99.25 153.46 99.3Q153.13 99.35 152.83 99.4Q152.2 99.48 151.75 99.7Q151.31 99.92 151.09 100.24Q150.86 100.57 150.86 101.03Q150.86 101.71 151.35 102.07Q151.84 102.44 152.61 102.44ZM169.49 91.18L169.49 94.45L160.73 94.45L160.73 91.18ZM162.56 87.87L166.98 87.87L166.98 100.72Q166.98 101.28 167.25 101.56Q167.52 101.84 168.11 101.84Q168.33 101.84 168.63 101.79Q168.92 101.74 169.08 101.69L169.74 104.9Q168.99 105.11 168.35 105.21Q167.71 105.3 167.09 105.3Q164.87 105.3 163.71 104.25Q162.56 103.19 162.56 101.22ZM177.4 105.36Q175.21 105.36 173.64 104.46Q172.07 103.56 171.23 101.94Q170.39 100.33 170.39 98.19Q170.39 96.04 171.23 94.42Q172.07 92.81 173.64 91.91Q175.21 91.01 177.4 91.01Q179.59 91.01 181.16 91.91Q182.74 92.81 183.58 94.42Q184.42 96.04 184.42 98.19Q184.42 100.33 183.58 101.94Q182.74 103.56 181.16 104.46Q179.59 105.36 177.4 105.36ZM177.42 101.99Q178.23 101.99 178.78 101.51Q179.33 101.04 179.62 100.18Q179.91 99.31 179.91 98.16Q179.91 97.01 179.62 96.16Q179.33 95.31 178.78 94.85Q178.23 94.38 177.42 94.38Q176.61 94.38 176.04 94.85Q175.47 95.31 175.18 96.16Q174.9 97.01 174.9 98.16Q174.9 99.31 175.18 100.18Q175.47 101.04 176.04 101.51Q176.61 101.99 177.42 101.99ZM185.99 105.1L185.99 91.18L190.28 91.18L190.28 93.73L190.43 93.73Q190.81 92.34 191.67 91.67Q192.54 91.01 193.67 91.01Q193.98 91.01 194.31 91.04Q194.64 91.08 194.92 91.17L194.92 95Q194.59 94.89 194.08 94.83Q193.57 94.78 193.17 94.78Q192.39 94.78 191.76 95.13Q191.13 95.48 190.78 96.1Q190.42 96.72 190.42 97.54L190.42 105.1ZM199.15 110.3Q198.35 110.32 197.64 110.19Q196.92 110.07 196.42 109.88L197.41 106.66L197.51 106.68Q198.44 106.97 199.12 106.88Q199.8 106.79 200.1 106.03L200.26 105.61L195.33 91.18L199.95 91.18L202.51 101.12L202.66 101.12L205.26 91.18L209.93 91.18L204.68 106.44Q204.3 107.58 203.61 108.45Q202.92 109.32 201.83 109.81Q200.74 110.3 199.15 110.3Z" fill="#f4f1ea"></path></svg></div>
       <div class="footer-korean">확장 물리지능 연구실</div>
       <div class="footer-addr">
         Dept. of Electronic Engineering, Pusan National University<br />
@@ -4546,7 +4672,7 @@
   <div class="footer-rule"></div>
 
   <div class="footer-base">
-    <div>© 2026 SPI Lab · PNU</div>
+    <div>© 2026 EPI Lab · PNU</div>
     <div>BEYOND THE FIVE SENSES</div>
   </div>
 </footer>
@@ -4704,6 +4830,28 @@
     });
   });
 
+  // Mobile dropdowns mirror the filter buttons (reuse all existing logic)
+  var typeSelect = document.getElementById('typeFilterSelect');
+  var topicSelect = document.getElementById('topicFilterSelect');
+  if (typeSelect) {
+    typeSelect.addEventListener('change', function () {
+      var btn = document.querySelector('#publications .filter-btn[data-filter="' + this.value + '"]');
+      if (btn) btn.click();
+    });
+    document.querySelectorAll('#publications .filter-btn[data-filter]').forEach(function (b) {
+      b.addEventListener('click', function () { typeSelect.value = b.dataset.filter; });
+    });
+  }
+  if (topicSelect) {
+    topicSelect.addEventListener('change', function () {
+      var btn = document.querySelector('#publications .filter-btn[data-topic-filter="' + this.value + '"]');
+      if (btn) btn.click();
+    });
+    document.querySelectorAll('#publications .filter-btn[data-topic-filter]').forEach(function (b) {
+      b.addEventListener('click', function () { topicSelect.value = b.dataset.topicFilter; });
+    });
+  }
+
   // Initial state
   applyPubFilters();
   activateTopicFromHash();
@@ -4841,8 +4989,10 @@
       var h = '<div class="nm-paper">';
       h += '<h4 class="nm-title">' + p.title + '</h4>';
       h += '<div class="nm-authors">' + p.authors + '</div>';
-      if (p.recognition) h += '<div class="nm-recognition">' + p.recognition + '</div>';
-      if (p.links && p.links.length) h += '<div class="nm-links">' + p.links.map(linkHtml).join('') + '</div>';
+      var meta = '';
+      if (p.recognition) meta += '<span class="nm-recognition">' + p.recognition + '</span>';
+      if (p.links && p.links.length) meta += '<div class="nm-links">' + p.links.map(linkHtml).join('') + '</div>';
+      if (meta) h += '<div class="nm-meta-row">' + meta + '</div>';
       return h + '</div>';
     }
     function render(d) {
@@ -4947,6 +5097,11 @@
             y += Math.sin(ts * n._sp * 1.2 + n._ph) * n._amp;
           }
           x += px * n._mx; y += py * n._my;
+          // keep each satellite's label within the network width (matters on narrow screens)
+          if (n !== center) {
+            var ml = 84, mr = 96;            // left text extent / right extent incl. country badge
+            if (W - mr > ml) x = Math.min(Math.max(x, ml), W - mr);
+          }
         }
         n._x = x; n._y = y;
         n.style.transform = 'translate(' + x + 'px,' + y + 'px) translate(-50%,-50%)';
@@ -4982,10 +5137,43 @@
         } else if (e.key === 'Escape') { collapse(); }
       });
     });
-    net.addEventListener('click', collapse);
+    document.addEventListener('click', function (e) {
+      if (!expanded) return;
+      if (e.target.closest('.cn-detail')) return;   // keep open when clicking inside the card
+      collapse();                                    // any other click (dimmed area, page, etc.) closes
+    });
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape') collapse(); });
   })();
 </script>
+
+<script>
+  // ===== Mobile nav (hamburger) =====
+  (function () {
+    var nav = document.querySelector('nav');
+    var toggle = document.getElementById('navToggle');
+    var links = document.getElementById('navLinks');
+    if (!nav || !toggle || !links) return;
+    function closeMenu() { nav.classList.remove('nav-open'); toggle.setAttribute('aria-expanded', 'false'); }
+    function openMenu() { nav.classList.add('nav-open'); toggle.setAttribute('aria-expanded', 'true'); }
+    toggle.addEventListener('click', function (e) {
+      e.stopPropagation();
+      if (nav.classList.contains('nav-open')) closeMenu(); else openMenu();
+    });
+    links.addEventListener('click', function (e) { if (e.target.closest('a')) closeMenu(); });
+    document.addEventListener('click', function (e) {
+      if (nav.classList.contains('nav-open') && !e.target.closest('nav')) closeMenu();
+    });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeMenu(); });
+    var brand = document.getElementById('brandHome');
+    if (brand) brand.addEventListener('click', function (e) {
+      e.preventDefault();
+      closeMenu();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  })();
+</script>
+
+
 
 </body>
 </html>
