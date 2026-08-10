@@ -4125,12 +4125,12 @@
       </div>
     </div>
 
-    <div class="pub-item" data-type="patent" data-topic="thread1" data-status="progress" data-pubid="P1">
+    <div class="pub-item" data-type="patent" data-topic="thread1" data-pubid="P1">
       <div class="pub-year">'26<div class="pub-id">[P1]</div></div>
       <div class="pub-content">
         <h4>Method and Apparatus for Estimating a Position of an Object in a Non-Line-of-Sight Region</h4>
-        <div class="pub-authors">Seong-Woo Kim, Hee-Yeun Kim, Byeonggyu Park, <strong>Mingu Jeon</strong>†</div>
-        <div class="pub-venue">Patent Application · Pending</div>
+        <div class="pub-authors">Byong Hyok Choi, Chul Woo Chun, Soo Mok Lee, Sung Woo Kim, <strong>Mingu Jeon</strong>, Hee-Yeun Kim, Byeonggyu Park</div>
+        <div class="pub-venue">Korean Patent Application · 10-2026-0148994 · Filed Aug. 10, 2026</div>
       </div>
     </div>
 
@@ -4706,7 +4706,7 @@
     
     // Extract id from .pub-id like "[J4]" or "[C7]"
     const idText = idEl ? idEl.textContent.trim() : '';
-    const idMatch = idText.match(/\[([JCD]?\d+)\]/);
+    const idMatch = idText.match(/\[([JCDP]?\d+)\]/);
     const pubId = idMatch ? idMatch[1] : '';
     item.dataset.pubId = pubId;
     
@@ -4774,11 +4774,11 @@
     }
     
     visibleItems.forEach(item => {
-      const year = item.dataset.year;
+      const year = (activeTypeFilter === 'patent') ? '__patents__' : item.dataset.year;
       if (year !== lastYear) {
         const header = document.createElement('div');
         header.className = 'pub-year-header' + (isFirst ? ' is-first' : '');
-        const label = (year === '__progress__') ? 'In Progress' : year;
+        const label = (year === '__progress__') ? 'In Progress' : (year === '__patents__') ? 'Patents' : year;
         header.innerHTML = `<span class="year-num">${label}</span>`;
         pubList.insertBefore(header, item);
         lastYear = year;
