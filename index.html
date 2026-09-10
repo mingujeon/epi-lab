@@ -1477,6 +1477,7 @@
   .team-pi,
   .team-members,
   .teaching-grid,
+  .talks-grid,
   .news-grid,
   .pub-list,
   .pub-filter,
@@ -3332,6 +3333,20 @@
   /* ============ DATASET ============ */
   #dataset { background: var(--bg); }
   #teaching { background: var(--paper); }
+
+  /* ============ TALKS ============ */
+  #talks { background: var(--bg); }
+
+  .talks-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 0 auto;
+    align-items: start;
+  }
+  @media (max-width: 900px) {
+    .talks-grid { grid-template-columns: 1fr; }
+  }
   .dataset-card {
     max-width: 1400px; margin: 0 auto;
     display: grid;
@@ -3439,6 +3454,7 @@
     <a href="#projects">Projects</a>
     <a href="#dataset">Dataset</a>
     <a href="#teaching">Teaching</a>
+    <a href="#talks">Talks</a>
   </div>
   <button class="nav-toggle" id="navToggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
     <span></span><span></span><span></span>
@@ -3851,7 +3867,7 @@
       <div class="news-card-head">
         <span class="news-mark mark-eccv" role="img" aria-label="ECCV 2026"></span>
         <div class="news-card-meta">
-          <span class="news-date">2026</span>
+          <span class="news-date">SEP 2026</span>
           <span class="news-tag">Conf</span>
         </div>
       </div>
@@ -4259,7 +4275,7 @@
         <div class="pub-recognition">BK21</div>
       </div>
       <div class="pub-links">
-        <span class="pub-btn disabled">TBA</span>
+        <a class="pub-btn" href="https://link.springer.com/chapter/10.1007/978-3-032-37356-4_7" target="_blank" rel="noopener">LINK</a>
       </div>
     </div>
 
@@ -4558,7 +4574,7 @@
         <div class="pub-content">
           <h4>AI-based Autonomous Terrain Reconnaissance for CBRN Contamination Mapping</h4>
           <div class="pub-authors">with Hanwha Aerospace</div>
-          <div class="pub-venue">UGV/UAV PLATFORM · PATH PLANNING · RADIATION DOSE MAPPING</div>
+          <div class="pub-venue">UGV/UAV PLATFORM · PATH PLANNING · CHEMICAL CONTAMINANT MAPPING</div>
         </div>
       </div>
 
@@ -4776,6 +4792,46 @@
         <li>
           <strong>Advanced Digital Fabrication and Practice</strong>
           <small>Graduate course</small>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="talks">
+  <div class="section-head">
+    <h2 class="section-name">Invited Talks</h2>
+  </div>
+
+  <div class="talks-grid">
+    <div class="teaching-block">
+      <h3>Conferences &amp; Symposia</h3>
+      <ul>
+        <li>
+          <strong>Summer Workshop on Computer Communications (SWCC) 2026</strong>
+          <small>Aug. 24, 2026 &middot; Seoul</small>
+        </li>
+        <li>
+          <strong>The 21st IEMEK Symposium on Embedded Technology (ISET) 2026</strong>
+          <small>May 15, 2026 &middot; Jeju</small>
+        </li>
+      </ul>
+    </div>
+
+    <div class="teaching-block">
+      <h3>Institutional Seminars</h3>
+      <ul>
+        <li>
+          <strong>POSTECH</strong>
+          <small>Sept. 11, 2026 &middot; Dept. of Industrial and Management Engineering</small>
+        </li>
+        <li>
+          <strong>LG Electronics</strong>
+          <small>Sept. 9, 2026 &middot; Corporate seminar</small>
+        </li>
+        <li>
+          <strong>Korea Institute of Industrial Technology (KITECH)</strong>
+          <small>Aug. 25, 2026</small>
         </li>
       </ul>
     </div>
@@ -5108,7 +5164,7 @@
 <script>
   // ===== News detail modal =====
   (function () {
-    var NEWS = {"eccv2026": {"mark": {"cls": "mark-eccv", "alt": "ECCV 2026"}, "tag": "Conf", "date": "2026", "card": "A paper accepted to <strong>ECCV 2026</strong>.", "venue": "European Conference on Computer Vision (ECCV) · Malm&ouml; · 2026", "papers": [{"title": "Reflection-Aware Reasoning for Non-Line-of-Sight Pedestrian Localization", "authors": "Byeonggyu Park, <strong>Mingu Jeon</strong>†, Seong-Woo Kim†", "recognition": "BK21", "links": [{"label": "LINK — TBA", "href": "#", "disabled": true}]}]}, "iros2025": {"mark": {"cls": "mark-iros", "alt": "IROS 2025"}, "tag": "Conf", "date": "OCT 2025", "card": "Two papers accepted to <strong>IROS 2025</strong>.", "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) · Hangzhou · 2025", "papers": [{"title": "mmWave Radar-Based Non-Line-of-Sight Pedestrian Localization at T-Junctions Utilizing Road Layout Extraction via Camera", "authors": "Byeonggyu Park, Hee-Yeun Kim, Byonghyok Choi, Hansang Cho, Byungkwan Kim, Soomok Lee, <strong>Mingu Jeon</strong>†, Seong-Woo Kim†", "recognition": "KIISE", "links": [{"label": "LINK", "href": "https://ieeexplore.ieee.org/document/11246461"}]}, {"title": "Radar-Based Darting Out NLoS Pedestrian Localization Near Parked Vehicles Using Camera-Assisted Point Cloud Interpretation", "authors": "Hee-Yeun Kim, Byeonggyu Park, Byonghyok Choi, Hansang Cho, Byungkwan Kim, Soomok Lee, <strong>Mingu Jeon</strong>†, Seung-Woo Seo†, Seong-Woo Kim†", "recognition": "KIISE", "links": [{"label": "LINK", "href": "https://ieeexplore.ieee.org/document/11246930"}]}]}, "iv2025": {"mark": {"cls": "mark-iv", "alt": "IEEE IV 2025"}, "tag": "Conf", "date": "JUN 2025", "card": "A paper accepted to <strong>IEEE IV 2025</strong>.", "venue": "IEEE Intelligent Vehicles Symposium (IV) · Cluj-Napoca · 2025", "papers": [{"title": "Non-Line-of-Sight Multi-Target Localization in T-Junctions Using Ray Tracing of mmWave Radar", "authors": "<strong>Mingu Jeon</strong>, Byeonggyu Park, Hee-Yeun Kim, Yujeong Kang, Byonghyok Choi, Hansang Cho, Byungkwan Kim, Soomok Lee, Seung-Woo Seo, Seong-Woo Kim", "links": [{"label": "LINK", "href": "https://ieeexplore.ieee.org/document/11097630"}]}]}, "tits2025": {"mark": {"cls": "mark-itss", "alt": "IEEE T-ITS"}, "tag": "Journal", "date": "FEB 2025", "card": "A paper accepted to <strong>IEEE T-ITS</strong>.", "venue": "IEEE Transactions on Intelligent Transportation Systems (T-ITS) · Vol. 26, No. 2", "papers": [{"title": "Non-Line-of-Sight Vehicle Localization based on Sound", "authors": "<strong>Mingu Jeon</strong>, Jae-Kyung Cho, Hee-Yeun Kim, Byeonggyu Park, Seung-Woo Seo, Seong-Woo Kim", "recognition": "JCR Top 2.4%", "links": [{"label": "LINK", "href": "https://ieeexplore.ieee.org/document/10790925"}, {"label": "CODE", "href": "https://github.com/mingujeon/NLoSVehicleLocalization"}]}]}, "tcpmt2024": {"mark": {"cls": "mark-tcpmt", "alt": "IEEE T-CPMT"}, "tag": "Journal", "date": "OCT 2024", "card": "A paper accepted to <strong>IEEE T-CPMT</strong>.", "venue": "IEEE Transactions on Components, Packaging and Manufacturing Technology (T-CPMT) · Vol. 14, No. 10", "papers": [{"title": "Extremely Rare Anomaly Detection Pipeline in Semiconductor Bonding Process with Digital Twin-driven Data Augmentation Method", "authors": "<strong>Mingu Jeon</strong>*, In-Ho Choi*, Seung-Woo Seo, Seong-Woo Kim", "links": [{"label": "LINK", "href": "https://ieeexplore.ieee.org/abstract/document/10666700"}]}]}, "iotj2023": {"mark": {"cls": "mark-iotj", "alt": "IEEE IoT-J"}, "tag": "Journal", "date": "JUL 2023", "card": "A paper accepted to <strong>IEEE IoT-J</strong>.", "venue": "IEEE Internet of Things Journal (IoT-J) · Vol. 10, No. 14", "papers": [{"title": "Machinery Value Estimation Method based on IIoT System Utilizing 1D-CNN Model for Low Sampling Rate Vibration Signals from MEMS", "authors": "Gyuho Lee, Seong-Woo Kim, <strong>Mingu Jeon</strong>†", "recognition": "JCR Top 4.1%", "links": [{"label": "LINK", "href": "https://ieeexplore.ieee.org/abstract/document/10048494"}]}]}};
+    var NEWS = {"eccv2026": {"mark": {"cls": "mark-eccv", "alt": "ECCV 2026"}, "tag": "Conf", "date": "SEP 2026", "card": "A paper accepted to <strong>ECCV 2026</strong>.", "venue": "European Conference on Computer Vision (ECCV) · Malm&ouml; · 2026", "papers": [{"title": "Reflection-Aware Reasoning for Non-Line-of-Sight Pedestrian Localization", "authors": "Byeonggyu Park, <strong>Mingu Jeon</strong>†, Seong-Woo Kim†", "recognition": "BK21", "links": [{"label": "LINK", "href": "https://link.springer.com/chapter/10.1007/978-3-032-37356-4_7"}]}]}, "iros2025": {"mark": {"cls": "mark-iros", "alt": "IROS 2025"}, "tag": "Conf", "date": "OCT 2025", "card": "Two papers accepted to <strong>IROS 2025</strong>.", "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) · Hangzhou · 2025", "papers": [{"title": "mmWave Radar-Based Non-Line-of-Sight Pedestrian Localization at T-Junctions Utilizing Road Layout Extraction via Camera", "authors": "Byeonggyu Park, Hee-Yeun Kim, Byonghyok Choi, Hansang Cho, Byungkwan Kim, Soomok Lee, <strong>Mingu Jeon</strong>†, Seong-Woo Kim†", "recognition": "KIISE", "links": [{"label": "LINK", "href": "https://ieeexplore.ieee.org/document/11246461"}]}, {"title": "Radar-Based Darting Out NLoS Pedestrian Localization Near Parked Vehicles Using Camera-Assisted Point Cloud Interpretation", "authors": "Hee-Yeun Kim, Byeonggyu Park, Byonghyok Choi, Hansang Cho, Byungkwan Kim, Soomok Lee, <strong>Mingu Jeon</strong>†, Seung-Woo Seo†, Seong-Woo Kim†", "recognition": "KIISE", "links": [{"label": "LINK", "href": "https://ieeexplore.ieee.org/document/11246930"}]}]}, "iv2025": {"mark": {"cls": "mark-iv", "alt": "IEEE IV 2025"}, "tag": "Conf", "date": "JUN 2025", "card": "A paper accepted to <strong>IEEE IV 2025</strong>.", "venue": "IEEE Intelligent Vehicles Symposium (IV) · Cluj-Napoca · 2025", "papers": [{"title": "Non-Line-of-Sight Multi-Target Localization in T-Junctions Using Ray Tracing of mmWave Radar", "authors": "<strong>Mingu Jeon</strong>, Byeonggyu Park, Hee-Yeun Kim, Yujeong Kang, Byonghyok Choi, Hansang Cho, Byungkwan Kim, Soomok Lee, Seung-Woo Seo, Seong-Woo Kim", "links": [{"label": "LINK", "href": "https://ieeexplore.ieee.org/document/11097630"}]}]}, "tits2025": {"mark": {"cls": "mark-itss", "alt": "IEEE T-ITS"}, "tag": "Journal", "date": "FEB 2025", "card": "A paper accepted to <strong>IEEE T-ITS</strong>.", "venue": "IEEE Transactions on Intelligent Transportation Systems (T-ITS) · Vol. 26, No. 2", "papers": [{"title": "Non-Line-of-Sight Vehicle Localization based on Sound", "authors": "<strong>Mingu Jeon</strong>, Jae-Kyung Cho, Hee-Yeun Kim, Byeonggyu Park, Seung-Woo Seo, Seong-Woo Kim", "recognition": "JCR Top 2.4%", "links": [{"label": "LINK", "href": "https://ieeexplore.ieee.org/document/10790925"}, {"label": "CODE", "href": "https://github.com/mingujeon/NLoSVehicleLocalization"}]}]}, "tcpmt2024": {"mark": {"cls": "mark-tcpmt", "alt": "IEEE T-CPMT"}, "tag": "Journal", "date": "OCT 2024", "card": "A paper accepted to <strong>IEEE T-CPMT</strong>.", "venue": "IEEE Transactions on Components, Packaging and Manufacturing Technology (T-CPMT) · Vol. 14, No. 10", "papers": [{"title": "Extremely Rare Anomaly Detection Pipeline in Semiconductor Bonding Process with Digital Twin-driven Data Augmentation Method", "authors": "<strong>Mingu Jeon</strong>*, In-Ho Choi*, Seung-Woo Seo, Seong-Woo Kim", "links": [{"label": "LINK", "href": "https://ieeexplore.ieee.org/abstract/document/10666700"}]}]}, "iotj2023": {"mark": {"cls": "mark-iotj", "alt": "IEEE IoT-J"}, "tag": "Journal", "date": "JUL 2023", "card": "A paper accepted to <strong>IEEE IoT-J</strong>.", "venue": "IEEE Internet of Things Journal (IoT-J) · Vol. 10, No. 14", "papers": [{"title": "Machinery Value Estimation Method based on IIoT System Utilizing 1D-CNN Model for Low Sampling Rate Vibration Signals from MEMS", "authors": "Gyuho Lee, Seong-Woo Kim, <strong>Mingu Jeon</strong>†", "recognition": "JCR Top 4.1%", "links": [{"label": "LINK", "href": "https://ieeexplore.ieee.org/abstract/document/10048494"}]}]}};
     var modal = document.getElementById('newsModal');
     if (!modal) return;
     var elMark = document.getElementById('nmMark');
