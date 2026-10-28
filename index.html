@@ -110,9 +110,9 @@
       "@type": "Dataset",
       "name": "ARIL Dataset",
       "alternateName": "Acoustic Recognition based Invisible-target Localization",
-      "description": "Multimodal dataset for Non-Line-of-Sight (NLoS) vehicle localization, pairing a microphone-array recording with a bird's-eye-view fisheye camera across velocity, direction and T-junction layout variations. Total size 11.7 TB.",
+      "description": "Multimodal dataset for Non-Line-of-Sight (NLOS) vehicle localization, pairing a microphone-array recording with a bird's-eye-view fisheye camera across velocity, direction and T-junction layout variations. Total size 11.7 TB.",
       "keywords": [
-        "NLoS localization",
+        "NLOS localization",
         "acoustic sensing",
         "BEV fisheye camera",
         "autonomous driving"
@@ -423,7 +423,7 @@
     opacity: 0.35;
   }
 
-  /* NLoS hidden target in scene A — pedestrian silhouette
+  /* NLOS hidden target in scene A — pedestrian silhouette
      DORMANT: grey (something is there but unseen)
      DETECTED: flashes red after echo is received at the vehicle */
   .person-head {
@@ -3515,14 +3515,14 @@
 
 
         <!-- ========================================
-             SCENE A: NLoS PERCEPTION (left side, inside PI frame)
+             SCENE A: NLOS PERCEPTION (left side, inside PI frame)
              ======================================== -->
         <g transform="translate(25, 82) scale(1.5)">
           <!-- Frame -->
           <rect class="scene-frame" x="30" y="60" width="220" height="170" rx="3" />
 
           <!-- Label -->
-          <text class="scene-label accent" x="36" y="80" style="letter-spacing: 1.2px;">▼ NLoS PERCEPTION</text>
+          <text class="scene-label accent" x="36" y="80" style="letter-spacing: 1.2px;">▼ NLOS PERCEPTION</text>
 
           <!-- Ego vehicle group — moves right, stops at detection moment.
                Base position is 20px lower than before for more realism. -->
@@ -3615,7 +3615,7 @@
           <circle class="reflection-ring" cx="228" cy="156" r="3" />
           <circle class="reflection-marker" cx="228" cy="156" r="2.5" />
 
-          <!-- Small "NLoS" annotation below the scene frame -->
+          <!-- Small "NLOS" annotation below the scene frame -->
           <text class="scene-label" x="140" y="254" text-anchor="middle">AUTONOMOUS VEHICLE &amp; ROBOTICS</text>
         </g>
 
@@ -3818,11 +3818,11 @@
              CONNECTION ARROWS: Simulator ⇌ Applications (bidirectional, horizontal)
              ======================================== -->
         <g class="sim-links">
-          <!-- Left: NLoS (right edge x=400) ⇌ Simulator (left edge x=435) -->
-          <!-- Top arrow: Simulator → NLoS -->
+          <!-- Left: NLOS (right edge x=400) ⇌ Simulator (left edge x=435) -->
+          <!-- Top arrow: Simulator → NLOS -->
           <line class="sim-link-arrow" x1="430" y1="275" x2="405" y2="275" />
           <polygon class="sim-link-head" points="405,275 412,272 412,278" />
-          <!-- Bottom arrow: NLoS → Simulator -->
+          <!-- Bottom arrow: NLOS → Simulator -->
           <line class="sim-link-arrow" x1="405" y1="300" x2="430" y2="300" />
           <polygon class="sim-link-head" points="430,300 423,297 423,303" />
 
@@ -4021,7 +4021,7 @@
       <h3>Autonomous Vehicle &amp; Robotics</h3>
       <p>Building autonomous systems that perceive and navigate the toughest real-world environments, including what hides behind walls and around corners. We read radar, acoustic, and multi-modal reflections to localize what direct sensors cannot see, and act on it safely.</p>
       <div class="tag-row">
-        <span class="tag">NLoS Perception</span>
+        <span class="tag">NLOS Perception</span>
         <span class="tag">Multi-modal Sensing</span>
         <span class="tag">Extended Perception</span>
         <span class="tag">Decision Making</span>
@@ -4583,7 +4583,7 @@
         <div class="pub-content">
           <h4>Multimodal Non-Line-of-Sight Object Localization</h4>
           <div class="pub-authors">with National Research Foundation of Korea &amp; Samsung Electro-Mechanics</div>
-          <div class="pub-venue">MULTIMODAL FUSION · NLoS LOCALIZATION · AUTONOMOUS DRIVING</div>
+          <div class="pub-venue">MULTIMODAL FUSION · NLOS LOCALIZATION · AUTONOMOUS DRIVING</div>
         </div>
         <div class="pub-links">
           <a class="pub-btn proj-paper-jump" href="#publications" data-topic="thread1" data-papers="C8,C7,C6">PAPER</a>
@@ -4595,7 +4595,7 @@
         <div class="pub-content">
           <h4>mmWave-based Non-Line-of-Sight Object Localization</h4>
           <div class="pub-authors">with Samsung Electro-Mechanics</div>
-          <div class="pub-venue">mmWave RADAR · NLoS LOCALIZATION · AUTONOMOUS DRIVING</div>
+          <div class="pub-venue">mmWave RADAR · NLOS LOCALIZATION · AUTONOMOUS DRIVING</div>
         </div>
         <div class="pub-links">
           <a class="pub-btn proj-paper-jump" href="#publications" data-topic="thread1" data-papers="C4">PAPER</a>
@@ -4607,7 +4607,7 @@
         <div class="pub-content">
           <h4>Sound-based Non-Line-of-Sight Vehicle Localization</h4>
           <div class="pub-authors">with National Research Foundation of Korea</div>
-          <div class="pub-venue">ACOUSTIC SENSING · NLoS LOCALIZATION · AUTONOMOUS DRIVING</div>
+          <div class="pub-venue">ACOUSTIC SENSING · NLOS LOCALIZATION · AUTONOMOUS DRIVING</div>
         </div>
         <div class="pub-links">
           <a class="pub-btn proj-paper-jump" href="#publications" data-topic="thread1" data-papers="J4">PAPER</a>
@@ -4619,7 +4619,7 @@
         <div class="pub-content">
           <h4>ARIL Dataset Construction — Acoustic Recognition based Invisible-target Localization</h4>
           <div class="pub-authors">with National Research Foundation of Korea &amp; Samsung Electro-Mechanics</div>
-          <div class="pub-venue">ACOUSTIC SENSING · BEV FISHEYE · NLoS DATASET</div>
+          <div class="pub-venue">ACOUSTIC SENSING · BEV FISHEYE · NLOS DATASET</div>
         </div>
         <div class="pub-links">
           <a class="pub-btn" href="https://drive.google.com/file/d/1-_sEHaIu0YFbq-Y9PJLxW90KdqeW9c6R/view?usp=sharing" target="_blank" rel="noopener">DATA</a>
@@ -4647,7 +4647,7 @@
         <div class="pub-content">
           <h4>Explainable AI for Quality Control of FPCB</h4>
           <div class="pub-authors">with LG Innotek</div>
-          <div class="pub-venue">THERMOGRAPHIC IMAGING · EXPLAINABLE AI · QUALITY CONTROL</div>
+          <div class="pub-venue">LANGUAGE-GUIDED INSPECTION · EXPLAINABLE AI · QUALITY CONTROL</div>
         </div>
       </div>
 
@@ -4709,15 +4709,15 @@
 
   <div class="dataset-card">
     <div class="dataset-main">
-      <div class="dataset-id">Release · NLoS Localization</div>
+      <div class="dataset-id">Release · NLOS Localization</div>
       <h3 class="dataset-title">ARIL Dataset</h3>
       <div class="dataset-full">Acoustic Recognition based Invisible-target Localization</div>
 
-      <p class="dataset-lead">The ARIL dataset supports research on detecting and localizing <strong>Non-Line-of-Sight (NLoS)</strong> vehicles. It spans variations in velocity (5, 10, 15, 20 km/h), direction of travel (left, right), and spatial layout (T-Junction configurations, with and without an opposite-side wall).</p>
+      <p class="dataset-lead">The ARIL dataset supports research on detecting and localizing <strong>Non-Line-of-Sight (NLOS)</strong> vehicles. It spans variations in velocity (5, 10, 15, 20 km/h), direction of travel (left, right), and spatial layout (T-Junction configurations, with and without an opposite-side wall).</p>
 
-      <p>ARIL was collected in a controlled test bed that reproduces real road conditions. To capture the full scene and ground truth in a single view, a 12-megapixel fisheye camera (185&deg; field of view) was mounted 7 m above the intersection center as the Bird's-Eye-View (BEV) camera. An SUV equipped with a microphone array and camera served as the data-collection vehicle, and the NLoS vehicle's location was obtained from the BEV camera. The total dataset size is 11.7 TB.</p>
+      <p>ARIL was collected in a controlled test bed that reproduces real road conditions. To capture the full scene and ground truth in a single view, a 12-megapixel fisheye camera (185&deg; field of view) was mounted 7 m above the intersection center as the Bird's-Eye-View (BEV) camera. An SUV equipped with a microphone array and camera served as the data-collection vehicle, and the NLOS vehicle's location was obtained from the BEV camera. The total dataset size is 11.7 TB.</p>
 
-      <p>Each scenario provides one sound sequence, one BEV image sequence, and one .xlsx file with the NLoS vehicle's location. Audio was recorded at 48,000 Hz and BEV images at 10 Hz.</p>
+      <p>Each scenario provides one sound sequence, one BEV image sequence, and one .xlsx file with the NLOS vehicle's location. Audio was recorded at 48,000 Hz and BEV images at 10 Hz.</p>
 
       <a class="pub-btn dataset-access" href="https://drive.google.com/file/d/1-_sEHaIu0YFbq-Y9PJLxW90KdqeW9c6R/view" target="_blank" rel="noopener">Access Dataset</a>
     </div>
@@ -4725,10 +4725,10 @@
     <aside class="dataset-spec">
       <div class="dataset-spec-title">At a Glance</div>
       <dl>
-        <div class="spec-row"><dt>Task</dt><dd>NLoS vehicle localization</dd></div>
+        <div class="spec-row"><dt>Task</dt><dd>NLOS vehicle localization</dd></div>
         <div class="spec-row"><dt>Modalities</dt><dd>Acoustic (mic array) + BEV camera</dd></div>
         <div class="spec-row"><dt>Velocities</dt><dd>5 / 10 / 15 / 20 km/h</dd></div>
-        <div class="spec-row"><dt>NLoS Direction</dt><dd>Left / Right</dd></div>
+        <div class="spec-row"><dt>NLOS Direction</dt><dd>Left / Right</dd></div>
         <div class="spec-row"><dt>Spatial Layout</dt><dd>T-Junction (with / without opposite-side wall)</dd></div>
         <div class="spec-row"><dt>BEV Camera</dt><dd>12 MP fisheye &middot; 185&deg; FOV &middot; 7 m elevation</dd></div>
         <div class="spec-row"><dt>Sampling</dt><dd>Audio 48,000 Hz &middot; BEV 10 Hz</dd></div>
